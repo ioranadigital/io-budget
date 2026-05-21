@@ -1,3 +1,6 @@
 ﻿.env.local
 node_modules/
 *.log
+
+# SurfVintage - Migrado a /app/interno/surfvintage
+/interno/surfvintage/
