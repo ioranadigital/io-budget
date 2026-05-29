@@ -1,0 +1,6 @@
+packages:
+  - 'lib'
+  - 'scripts'
+  - 'app/clientes/*'
+  - 'app/interno/*'
+  - 'app/tools/*'

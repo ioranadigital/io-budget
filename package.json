@@ -1,0 +1,40 @@
+{
+  "name": "iorana-digital",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "IORANA DIGITAL - Agencia digital con monorepo pnpm",
+  "private": true,
+  "scripts": {
+    "build": "pnpm -r --parallel run build",
+    "dev": "pnpm -r --parallel run dev",
+    "lint": "pnpm -r --parallel run lint",
+    "type-check": "tsc --noEmit",
+    "test:run": "pnpm -r run test --run || true",
+    "prepare": "husky install"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/parser": "^6.13.0",
+    "eslint": "^8.55.0",
+    "prettier": "^3.1.0",
+    "husky": "^9.0.0",
+    "lint-staged": "^15.0.0"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.json": [
+      "prettier --write"
+    ],
+    "*.md": [
+      "prettier --write"
+    ]
+  }
+}
