@@ -3,6 +3,7 @@ import ContactInfo4 from "@/app/Components/ContactInfo/ContactInfo4";
 import Services5 from "@/app/Components/Services/Services5";
 import Skill from "@/app/Components/Skill/Skill";
 import MetodologiaSection from "@/app/Components/Services/MetodologiaSection";
+import FeaturesCardsSection from "@/app/Components/Services/FeaturesCardsSection";
 import Work1 from "@/app/Components/Work/Work1";
 import React from "react";
 
@@ -16,6 +17,7 @@ const page = () => {
       <Services5></Services5>
       <Skill></Skill>
       <MetodologiaSection></MetodologiaSection>
+      <FeaturesCardsSection></FeaturesCardsSection>
       <Work1></Work1>
       <ContactInfo4></ContactInfo4>
     </div>
