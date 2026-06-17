@@ -151,6 +151,7 @@ const FeaturesSection: FC = () => {
               justifyContent: "center",
               position: "relative",
               height: "500px",
+              marginTop: "-120px",
             }}
           >
             {/* Animated Wave Background */}
