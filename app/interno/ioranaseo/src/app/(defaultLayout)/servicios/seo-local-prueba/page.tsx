@@ -1,6 +1,7 @@
 import React from "react";
 import BreadCumb from "../../../Components/Common/BreadCumb";
 import HeroBannerPlanes from "../../../Components/HeroBanner/HeroBannerPlanes";
+import FeaturesSection from "../../../Components/FeaturesSection/FeaturesSection";
 import NuestroProcesoLocal from "../../../Components/NuestroProcesoLocal/NuestroProcesoLocal";
 import ContactIno3 from "../../../Components/ContactInfo/ContactIno3";
 
@@ -21,6 +22,8 @@ const SeoLocalPruebaPage = () => {
           showImage={false}
         ></HeroBannerPlanes>
       </div>
+
+      <FeaturesSection></FeaturesSection>
 
       <NuestroProcesoLocal></NuestroProcesoLocal>
 
