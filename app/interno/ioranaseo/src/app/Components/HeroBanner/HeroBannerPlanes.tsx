@@ -3,7 +3,6 @@ import parse from "html-react-parser";
 import Image from "next/image";
 import Link from "next/link";
 import { FC, useRef } from "react";
-import BreadcrumbInline from "./BreadcrumbInline";
 
 interface HeroBannerPlanesProps {
   subtitle: string;
@@ -39,24 +38,6 @@ const HeroBannerPlanes: FC<HeroBannerPlanesProps> = ({
         style={{ minHeight: "600px", margin: "0", padding: "0" }}
       >
         <div className="container">
-          <div
-            className="breadcrumb-container"
-            style={{
-              width: "100%",
-              paddingLeft: "200px",
-              paddingRight: "15px",
-              paddingTop: "0",
-              paddingBottom: "0",
-              margin: "0",
-            }}
-          >
-            <BreadcrumbInline
-              items={[
-                { label: "Inicio", href: "/" },
-                { label: "Planes y Precios" },
-              ]}
-            />
-          </div>
           <div className="row align-items-center" style={{ margin: "0" }}>
             <div className="col-lg-6">
               <div className="main-heading" style={{ marginTop: "-5px" }}>
