@@ -11,6 +11,11 @@ const ImagenMarcaPage = () => {
       <BreadCumb
         bgimg="/assets/img/bg/comon-hero-bg.jpg"
         Title="Imagen de Marca"
+        breadcrumbs={[
+          { label: "Inicio", href: "/" },
+          { label: "Servicios", href: "/servicios" },
+          { label: "Imagen de Marca" },
+        ]}
       ></BreadCumb>
 
       <div style={{ fontSize: "0.85em" }} className="ficha-hero">

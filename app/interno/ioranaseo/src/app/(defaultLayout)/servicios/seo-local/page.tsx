@@ -10,7 +10,12 @@ const SeoLocalPruebaPage = () => {
     <div>
       <BreadCumb
         bgimg="/assets/img/bg/comon-hero-bg.jpg"
-        Title="SEO Local Prueba"
+        Title="Servicio SEO Local"
+        breadcrumbs={[
+          { label: "Inicio", href: "/" },
+          { label: "Servicios", href: "/servicios" },
+          { label: "Servicio SEO Local" },
+        ]}
       ></BreadCumb>
 
       <div style={{ fontSize: "0.85em" }} className="ficha-hero">

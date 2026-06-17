@@ -11,6 +11,11 @@ const PaginaWebPage = () => {
       <BreadCumb
         bgimg="/assets/img/bg/comon-hero-bg.jpg"
         Title="Diseñamos tu Página Web"
+        breadcrumbs={[
+          { label: "Inicio", href: "/" },
+          { label: "Servicios", href: "/servicios" },
+          { label: "Diseñamos tu Página Web" },
+        ]}
       ></BreadCumb>
 
       <div style={{ fontSize: "0.85em" }} className="ficha-hero">

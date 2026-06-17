@@ -11,6 +11,11 @@ const PosicionamientoGooglePage = () => {
       <BreadCumb
         bgimg="/assets/img/bg/comon-hero-bg.jpg"
         Title="Presencia Digital en Google"
+        breadcrumbs={[
+          { label: "Inicio", href: "/" },
+          { label: "Servicios", href: "/servicios" },
+          { label: "Presencia Digital en Google" },
+        ]}
       ></BreadCumb>
 
       <div style={{ fontSize: "0.85em" }} className="ficha-hero">
