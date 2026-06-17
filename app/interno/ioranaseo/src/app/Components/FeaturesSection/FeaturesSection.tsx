@@ -1,5 +1,6 @@
 "use client";
 import { CheckCircle, Zap, Award } from "lucide-react";
+import Image from "next/image";
 import { FC } from "react";
 
 interface Feature {
@@ -205,14 +206,11 @@ const FeaturesSection: FC = () => {
               </svg>
             </div>
 
-            {/* Image Placeholder */}
+            {/* Image Container */}
             <div
               style={{
                 position: "relative",
                 zIndex: 1,
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
                 width: "400px",
                 height: "400px",
                 backgroundColor: "#ffffff",
@@ -221,23 +219,17 @@ const FeaturesSection: FC = () => {
                 boxShadow: "0 10px 30px rgba(77, 50, 165, 0.2)",
               }}
             >
-              <div
+              <Image
+                src="/assets/img/work/hombre-mujer-empreendedores-online.jpg"
+                alt="Profesionales de SEO Local"
+                width={400}
+                height={400}
                 style={{
                   width: "100%",
                   height: "100%",
-                  backgroundColor: "#F0E6FF",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  color: "#4D32A5",
-                  fontSize: "16px",
-                  fontWeight: "600",
-                  textAlign: "center",
-                  padding: "20px",
+                  objectFit: "cover",
                 }}
-              >
-                Imagen o Contenido Visual
-              </div>
+              />
             </div>
           </div>
         </div>
