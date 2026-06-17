@@ -59,7 +59,7 @@ const HeroBannerPlanes: FC<HeroBannerPlanesProps> = ({
           </div>
           <div className="row align-items-center" style={{ margin: "0" }}>
             <div className="col-lg-6">
-              <div className="main-heading" style={{ marginTop: "-55px" }}>
+              <div className="main-heading" style={{ marginTop: "-5px" }}>
                 <p
                   style={{
                     color: "#4D32A5",
