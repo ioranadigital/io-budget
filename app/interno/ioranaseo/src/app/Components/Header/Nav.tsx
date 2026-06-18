@@ -149,7 +149,7 @@ const Nav: FC<NavProps> = ({ setMobileToggle }) => {
                 <ul>
                   <li>
                     <Link
-                      href="/servicios/documentacion"
+                      href="/servicios/gestion-documental"
                       onClick={() => setMobileToggle(false)}
                     >
                       Documentación Controlada
