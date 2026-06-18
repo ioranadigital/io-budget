@@ -1,0 +1,44 @@
+import React from "react";
+import BreadCumb from "@/app/Components/Common/BreadCumb";
+import HeroBannerPlanes from "@/app/Components/HeroBanner/HeroBannerPlanes";
+import FeaturesSection from "@/app/Components/FeaturesSection/FeaturesSection";
+import NuestroProcesoLocal from "@/app/Components/NuestroProcesoLocal/NuestroProcesoLocal";
+import ContactIno3 from "@/app/Components/ContactInfo/ContactIno3";
+
+const NotificacionesWhatsappPage = () => {
+  return (
+    <div>
+      <BreadCumb
+        bgimg="/assets/img/bg/comon-hero-bg.jpg"
+        Title="Notificaciones WhatsApp"
+        breadcrumbs={[
+          { label: "Inicio", href: "/" },
+          { label: "Servicios", href: "/servicios" },
+          { label: "Notificaciones WhatsApp" },
+        ]}
+      ></BreadCumb>
+
+      <div style={{ fontSize: "0.85em" }} className="ficha-hero">
+        <HeroBannerPlanes
+          subtitle="Servicios Digitales"
+          title="Implementa <span style='color: #4D32A5;'>Notificaciones WhatsApp</span>"
+          content="Comunica con tus clientes directamente por WhatsApp. Automatiza mensajes y aumenta la interacción con tu audiencia."
+          img="/assets/img/hero/hero3-main-img.png"
+          showImage={false}
+        ></HeroBannerPlanes>
+      </div>
+
+      <FeaturesSection
+        title="¿Para qué quiero tener"
+        titleHighlight="Notificaciones WhatsApp?"
+        description="WhatsApp es el canal de comunicación más directo con tus clientes. Notificaciones automáticas aumentan la tasa de apertura, mejoran la experiencia del cliente y generan más ventas."
+      ></FeaturesSection>
+
+      <NuestroProcesoLocal></NuestroProcesoLocal>
+
+      <ContactIno3></ContactIno3>
+    </div>
+  );
+};
+
+export default NotificacionesWhatsappPage;
