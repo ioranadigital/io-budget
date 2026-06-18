@@ -21,14 +21,18 @@ const ImagenMarcaPage = () => {
       <div style={{ fontSize: "0.85em" }} className="ficha-hero">
         <HeroBannerPlanes
           subtitle="Servicios Digitales"
-          title="Imagen de Marca"
+          title="Trabajamos tu <span style='color: #4D32A5;'>Imagen de Marca</span>"
           content="Crea una identidad visual única y memorable. Diseño de logo, paleta de colores y guía de marca coherente."
           img="/assets/img/hero/hero3-main-img.png"
           showImage={false}
         ></HeroBannerPlanes>
       </div>
 
-      <FeaturesSection></FeaturesSection>
+      <FeaturesSection
+        title="¿Es Necesario tener una"
+        titleHighlight="Imagen de Marca?"
+        description="Tu imagen de marca es tu primera impresión. Una identidad visual coherente y profesional genera confianza, diferencia tu negocio de la competencia y se queda en la mente de tus clientes."
+      ></FeaturesSection>
 
       <NuestroProcesoLocal></NuestroProcesoLocal>
 
