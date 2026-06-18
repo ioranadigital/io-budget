@@ -11,6 +11,11 @@ const Inicio2Page = () => {
       <BreadCumb
         bgimg="/assets/img/bg/comon-hero-bg.jpg"
         Title="Planes y Precios"
+        breadcrumbs={[
+          { label: "Inicio", href: "/" },
+          { label: "Planes y Precios", href: "/planes" },
+          { label: "Plan Básico" },
+        ]}
       ></BreadCumb>
 
       <HeroBannerPlanes

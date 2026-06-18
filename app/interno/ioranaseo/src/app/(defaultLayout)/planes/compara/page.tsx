@@ -11,6 +11,11 @@ const ComparaPlanesPage = () => {
       <BreadCumb
         bgimg="/assets/img/bg/comon-hero-bg.jpg"
         Title="Compara Nuestros Planes"
+        breadcrumbs={[
+          { label: "Inicio", href: "/" },
+          { label: "Planes y Precios", href: "/planes" },
+          { label: "Compara los Planes" },
+        ]}
       ></BreadCumb>
 
       <HeroBannerPlanes
