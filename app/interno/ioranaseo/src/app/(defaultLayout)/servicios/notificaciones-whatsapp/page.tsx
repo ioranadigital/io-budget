@@ -34,7 +34,11 @@ const NotificacionesWhatsappPage = () => {
         description="WhatsApp es el canal de comunicación más directo con tus clientes. Notificaciones automáticas aumentan la tasa de apertura, mejoran la experiencia del cliente y generan más ventas."
       ></FeaturesSection>
 
-      <NuestroProcesoLocal></NuestroProcesoLocal>
+      <NuestroProcesoLocal
+        title="¿Cómo implementaremos el sistema de"
+        titleHighlight="Notificaciones de Whatsapp?"
+        description="Proceso probado en más de 80 proyectos. Sistema de notificaciones que conecta con tus clientes."
+      ></NuestroProcesoLocal>
 
       <ContactIno3></ContactIno3>
     </div>
