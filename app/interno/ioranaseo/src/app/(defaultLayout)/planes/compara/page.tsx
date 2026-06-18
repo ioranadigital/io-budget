@@ -7,7 +7,7 @@ import ContactIno3 from "../../../Components/ContactInfo/ContactIno3";
 
 const ComparaPlanesPage = () => {
   return (
-    <div style={{ backgroundColor: "#f5f5f5" }}>
+    <div style={{ backgroundColor: "#F5F6FF" }}>
       <BreadCumb
         bgimg="/assets/img/bg/comon-hero-bg.jpg"
         Title="Compara Nuestros Planes"
