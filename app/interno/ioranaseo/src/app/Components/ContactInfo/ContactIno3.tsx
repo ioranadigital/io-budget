@@ -4,7 +4,16 @@ import loadBackgroudImages from "../Common/loadBackgroudImages";
 import Image from "next/image";
 import data from "../../Data/faq.json";
 
-const ContactIno3: FC = () => {
+interface FAQ {
+  title: string;
+  desc: string;
+}
+
+interface ContactIno3Props {
+  faqData?: FAQ[];
+}
+
+const ContactIno3: FC<ContactIno3Props> = ({ faqData }) => {
   const accordionContentRef = useRef(null);
   const [openItemIndex, setOpenItemIndex] = useState(-1);
   const [firstItemOpen, setFirstItemOpen] = useState(true);
@@ -57,7 +66,7 @@ const ContactIno3: FC = () => {
           <div className="col-lg-6">
             <div style={{ paddingRight: "20px" }}>
               <div className="accordion accordion1" id="accordionContact">
-                {data.map((item, index) => (
+                {(faqData || data).map((item, index) => (
                   <div
                     key={index}
                     className={`cs_accordian accordion-item ${index === openItemIndex ? "active" : ""}`}
