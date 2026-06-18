@@ -4,6 +4,7 @@ import HeroBannerPlanes from "@/app/Components/HeroBanner/HeroBannerPlanes";
 import FeaturesSection from "@/app/Components/FeaturesSection/FeaturesSection";
 import NuestroProcesoLocal from "@/app/Components/NuestroProcesoLocal/NuestroProcesoLocal";
 import ContactIno3 from "@/app/Components/ContactInfo/ContactIno3";
+import Faq1 from "@/app/Components/Faq/Faq1";
 import {
   Search,
   Settings,
@@ -96,6 +97,29 @@ const crmWhyImportant = [
   "CRM automatiza 25% del tiempo manual de ventas — tu equipo vende en lugar de administrar, ROI en 6-12 meses",
 ];
 
+const crmFaq = [
+  {
+    title: "¿Qué CRM es el mejor para mi negocio?",
+    desc: "Depende del tamaño y tipo. Startups: HubSpot o Pipedrive (intuitivos, baratos). PYMEs: Salesforce o Zoho (más features). Empresas: SAP o Dynamics (enterprise). Analizamos tu operación y recomendamos la mejor opción. Instalamos, configuramos y entrenamos tu equipo.",
+  },
+  {
+    title: "¿Perderé datos al migrar a CRM?",
+    desc: "No. Migramos todo: clientes, contactos, historial de vendidos, comunicaciones. Limpiamos y validamos datos antes. Si tienes información en Excel, Salesforce anterior o ERP, lo importamos completo. Cero datos perdidos, 100% validado.",
+  },
+  {
+    title: "¿Cuánto tiempo tarda implementar un CRM?",
+    desc: "Implementación básica: 2-4 semanas. Implementación compleja con integraciones: 6-8 semanas. El proceso: configuración, capacitación, pruebas, lanzamiento. Tu equipo empieza a ver valor en primeras 2 semanas. Soporte continuo después del lanzamiento.",
+  },
+  {
+    title: "¿El CRM ralentiza a mi equipo?",
+    desc: "Al principio parece lento porque es nuevo. La adopción toma 2-4 semanas. Después, acelera. Capturo de datos toma menos tiempo, búsqueda de información es instantánea, pipelines visibles. A los 2 meses, tu equipo es 30-40% más productivo.",
+  },
+  {
+    title: "¿Qué costo tiene un CRM mensualmente?",
+    desc: "Varía: Pipedrive €25-125/usuario/mes, HubSpot €50-3,200/mes, Salesforce €165-300/usuario/mes. Además: implementación (€3,000-15,000), capacitación (€1,000-3,000), integraciones (€2,000-8,000). ROI típico 6-12 meses. Se amortiza en ventas adicionales.",
+  },
+];
+
 const CRMPage = () => {
   return (
     <div>
@@ -134,6 +158,8 @@ const CRMPage = () => {
         description="Proceso probado en más de 80 proyectos. Sistema relacional que crece con tu negocio."
         steps={crmSteps}
       ></NuestroProcesoLocal>
+
+      <Faq1 faqData={crmFaq} title="Preguntas Frecuentes sobre CRM" />
 
       <ContactIno3></ContactIno3>
     </div>

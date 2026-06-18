@@ -4,6 +4,7 @@ import HeroBannerPlanes from "@/app/Components/HeroBanner/HeroBannerPlanes";
 import FeaturesSection from "@/app/Components/FeaturesSection/FeaturesSection";
 import NuestroProcesoLocal from "@/app/Components/NuestroProcesoLocal/NuestroProcesoLocal";
 import ContactIno3 from "@/app/Components/ContactInfo/ContactIno3";
+import Faq1 from "@/app/Components/Faq/Faq1";
 import {
   Search,
   Settings,
@@ -96,6 +97,29 @@ const googleAdsWhyImportant = [
   "El 50% de clientes toma decisión de compra en la primera búsqueda — estar visible en Google Ads significa capturar intención de compra real",
 ];
 
+const googleAdsFaq = [
+  {
+    title: "¿Cuál es el presupuesto mínimo para Google Ads?",
+    desc: "No hay mínimo obligatorio, pero recomendamos €300-500/mes para obtener volumen significativo de datos y optimización. Con presupuestos menores, es difícil escalar. El presupuesto lo controlas tú: puedes empezar pequeño y crecer según los resultados. Lo importante es que sea inversión calculada basada en tu margen de ganancia.",
+  },
+  {
+    title: "¿Cuánto cuesta que mi agencia maneje Google Ads?",
+    desc: "Ofrecemos dos modelos: 1) Comisión sobre el presupuesto publicitario (15-20% típico), 2) Tarifa fija mensual (€500-1,500 según complejidad). El primer mes es de setup y optimización. Desde mes 2 ves ROI positivo si la estrategia es correcta.",
+  },
+  {
+    title: "¿Garantizan retorno de inversión (ROI)?",
+    desc: "Garantizamos ROI positivo o ajustamos sin costo. El primer mes es optimización. Si en 30-60 días no logras 2-3x retorno sobre lo invertido, revisamos la estrategia gratis. Si el servicio no funciona, no pagas comisión extra.",
+  },
+  {
+    title: "¿Cómo evitan el desperdicio en clics sin convertir?",
+    desc: "Usamos palabras clave hiperSegmentadas de alto valor. Excluimos palabras negativas que no convierten. Configuramos ubicaciones, horarios y dispositivos específicos. A/B testeamos continuamente anuncios para maximizar CTR. El 70% del presupuesto va a las palabras que realmente convierten.",
+  },
+  {
+    title: "¿Puedo parar una campaña en cualquier momento?",
+    desc: "Sí, sin penalizaciones. Las campañas de Google Ads son flexibles: pausas/paras cuando quieras. Si cambia tu situación o resultados, ajustamos o finalizamos. Lo importante es que veas valor desde el principio: tráfico calificado y leads reales.",
+  },
+];
+
 const GoogleAdsPage = () => {
   return (
     <div>
@@ -134,6 +158,11 @@ const GoogleAdsPage = () => {
         description="Proceso probado en más de 80 proyectos. Estrategia enfocada en ROI y conversiones reales."
         steps={googleAdsSteps}
       ></NuestroProcesoLocal>
+
+      <Faq1
+        faqData={googleAdsFaq}
+        title="Preguntas Frecuentes sobre Google Ads"
+      />
 
       <ContactIno3></ContactIno3>
     </div>

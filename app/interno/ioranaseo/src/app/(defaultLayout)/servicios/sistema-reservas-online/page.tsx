@@ -4,6 +4,7 @@ import HeroBannerPlanes from "@/app/Components/HeroBanner/HeroBannerPlanes";
 import FeaturesSection from "@/app/Components/FeaturesSection/FeaturesSection";
 import NuestroProcesoLocal from "@/app/Components/NuestroProcesoLocal/NuestroProcesoLocal";
 import ContactIno3 from "@/app/Components/ContactInfo/ContactIno3";
+import Faq1 from "@/app/Components/Faq/Faq1";
 import {
   Search,
   Settings,
@@ -96,6 +97,29 @@ const sistemaReservasOnlineWhyImportant = [
   "Empresas con reservas online ocupan 40-60% más de su capacidad — maximizar utilización sin costo adicional",
 ];
 
+const sistemaReservasOnlineFaq = [
+  {
+    title: "¿Puedo integrar el sistema con mi calendario actual?",
+    desc: "Sí. Sincronizamos con Google Calendar, Outlook, Apple Calendar. Tus reservas aparecen automáticamente en tu calendario personal. Si usas otro sistema (agenda papel), migramos manualmente. Sincronización bidireccional: cambio en web = cambio en tu calendario.",
+  },
+  {
+    title: "¿Qué pasa si un cliente cancela o reschedulea?",
+    desc: "Automático. Cliente cancela online → horario se libera → otro cliente puede reservar. Si es última hora, automáticamente notificamos a lista de espera (si la hay). Reembolso automático según políticas. Cero trabajo manual, todo fluye solo.",
+  },
+  {
+    title: "¿Cuánto cuesta un sistema de reservas?",
+    desc: "Plataforma básica: €50-150/mes (hasta 100 reservas/mes). Intermedia: €200-400/mes (hasta 1,000 reservas). Enterprise: €500+/mes (ilimitado). Incluye: calendario, notificaciones, pagos integrados, reportes. Implementación: €500-2,000 una sola vez.",
+  },
+  {
+    title: "¿Los clientes pagan online para reservar?",
+    desc: "Opcional. Puedes requerir depósito (30-50% del servicio) para confirmar, o gratis si confías. Si requieres prepago: Stripe, PayPal, Redsys integrados. Si es gratis: cliente solo completa formulario. Flexibilidad total según tu negocio.",
+  },
+  {
+    title: "¿Puedo tener múltiples servicios con precios distintos?",
+    desc: "Sí, claro. Corte cabello €25, tinte €40, tratamiento €60. Cada uno con duración distinta, personal asignado, precio. Sistema automáticamente calcula disponibilidad según duración. Cliente elige servicio → elige hora → paga → listo.",
+  },
+];
+
 const SistemaReservasOnlinePage = () => {
   return (
     <div>
@@ -134,6 +158,11 @@ const SistemaReservasOnlinePage = () => {
         description="Proceso probado en más de 80 proyectos. Sistema de reservas que gestiona automáticamente tus citas."
         steps={sistemaReservasOnlineSteps}
       ></NuestroProcesoLocal>
+
+      <Faq1
+        faqData={sistemaReservasOnlineFaq}
+        title="Preguntas Frecuentes sobre Sistema de Reservas Online"
+      />
 
       <ContactIno3></ContactIno3>
     </div>

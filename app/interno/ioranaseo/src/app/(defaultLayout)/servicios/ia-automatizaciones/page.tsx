@@ -4,6 +4,7 @@ import HeroBannerPlanes from "@/app/Components/HeroBanner/HeroBannerPlanes";
 import FeaturesSection from "@/app/Components/FeaturesSection/FeaturesSection";
 import NuestroProcesoLocal from "@/app/Components/NuestroProcesoLocal/NuestroProcesoLocal";
 import ContactIno3 from "@/app/Components/ContactInfo/ContactIno3";
+import Faq1 from "@/app/Components/Faq/Faq1";
 import {
   Search,
   Settings,
@@ -96,6 +97,29 @@ const iaAutomatizacionesWhyImportant = [
   "Procesos automatizados reducen errores humanos en 90% — calidad consistente y clientes más satisfechos sin supervisión",
 ];
 
+const iaAutomatizacionesFaq = [
+  {
+    title: "¿Cuáles son los procesos más fáciles de automatizar?",
+    desc: "Los mejores candidatos son procesos repetitivos y predecibles: atención al cliente (chatbots), procesamiento de datos, facturación, emails de seguimiento, generación de reportes, validación de formularios. Si tu equipo realiza la misma tarea más de 10 veces/semana, probablemente se puede automatizar.",
+  },
+  {
+    title: "¿La IA puede reemplazar a mi equipo?",
+    desc: "No. La IA reemplaza tareas, no personas. Libera a tu equipo de trabajo administrativo repetitivo para que se dedique a decisiones estratégicas, relaciones con clientes, creatividad. El resultado es equipo más productivo y satisfecho, no desempleo.",
+  },
+  {
+    title: "¿Cuánto ahorro de costo voy a tener?",
+    desc: "Varía por proceso. Un chatbot reduce 60-70% de respuestas manuales. Automatización de facturación ahorra 20-30 horas/mes. El ROI típico es 2-4 meses: la inversión se amortiza en poco tiempo. Ofrecemos análisis previo de ahorro estimado.",
+  },
+  {
+    title: "¿Qué datos necesitan para entrenar la IA?",
+    desc: "Depende del caso. Para chatbots: preguntas frecuentes pasadas. Para análisis: datos históricos del negocio. Para clasificación: ejemplos etiquetados. No necesitas millones de datos. La IA moderna funciona bien incluso con datasets medianos (cientos de registros).",
+  },
+  {
+    title: "¿Es segura la IA con datos sensibles de mi empresa?",
+    desc: "Sí, implementamos con máxima privacidad. Los datos se procesan en servidores privados, no en la nube pública. Cumplimos RGPD y normas de protección de datos. Opcionalmente, entrenar IA en servidores propios (on-premise) para máxima seguridad.",
+  },
+];
+
 const IAAutomatizacionesPage = () => {
   return (
     <div>
@@ -134,6 +158,11 @@ const IAAutomatizacionesPage = () => {
         description="Proceso probado en más de 80 proyectos. Soluciones inteligentes que transforman tu operación."
         steps={iaAutomatizacionesSteps}
       ></NuestroProcesoLocal>
+
+      <Faq1
+        faqData={iaAutomatizacionesFaq}
+        title="Preguntas Frecuentes sobre IA y Automatizaciones"
+      />
 
       <ContactIno3></ContactIno3>
     </div>

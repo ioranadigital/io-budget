@@ -4,6 +4,7 @@ import HeroBannerPlanes from "@/app/Components/HeroBanner/HeroBannerPlanes";
 import FeaturesSection from "@/app/Components/FeaturesSection/FeaturesSection";
 import NuestroProcesoLocal from "@/app/Components/NuestroProcesoLocal/NuestroProcesoLocal";
 import ContactIno3 from "@/app/Components/ContactInfo/ContactIno3";
+import Faq1 from "@/app/Components/Faq/Faq1";
 import {
   Search,
   Settings,
@@ -96,6 +97,29 @@ const paginaWebWhyImportant = [
   "El 78% de clientes no vuelve si la experiencia es mala — diseño profesional y usabilidad son inversión en retención",
 ];
 
+const paginaWebFaq = [
+  {
+    title: "¿Cuánto cuesta crear una página web profesional?",
+    desc: "El precio depende de la complejidad: una web básica (5-10 páginas) cuesta entre €1,500-€3,500. Webs más complejas con e-commerce o funcionalidades específicas, €4,000-€8,000+. Ofrecemos presupuestos personalizados sin compromiso. Recuerda que es una inversión que se amortiza en clientes que antes no tenías.",
+  },
+  {
+    title: "¿Mi página web será responsive (funciona en móvil)?",
+    desc: "Sí, 100%. El 85% del tráfico web proviene de móviles. Todas nuestras webs se diseñan mobile-first: se ven perfectas en smartphones, tablets y ordenadores. Google además penaliza webs no responsivas en búsquedas, así que es obligatorio.",
+  },
+  {
+    title: "¿Incluyen hosting y dominio en el servicio?",
+    desc: "El dominio es tuyo desde el día 1. El hosting está incluido en un plan de mantenimiento mensual (desde €30/mes). O si prefieres, te entregamos los ficheros y lo gestionas tú mismo. Lo importante es que después del lanzamiento, tu web está segura, actualizada y optimizada.",
+  },
+  {
+    title: "¿Cuánto tiempo tarda en estar lista mi página web?",
+    desc: "Típicamente 4-8 semanas desde el briefing hasta el lanzamiento, dependiendo de la complejidad y tus revisiones. Trabajamos en sprints semanales para que veas avance constante. Las webs simples pueden estar listas en 2-3 semanas.",
+  },
+  {
+    title: "¿Puedo modificar la web después del lanzamiento?",
+    desc: "Sí. Entregamos acceso a un panel de administración (CMS) donde puedes cambiar textos, imágenes y contenido. Para cambios más complejos, incluimos soporte mensual. Las actualizaciones de seguridad y mantenimiento técnico también están cubiertas en el plan de soporte.",
+  },
+];
+
 const PaginaWebPage = () => {
   return (
     <div>
@@ -134,6 +158,11 @@ const PaginaWebPage = () => {
         description="Proceso probado en más de 80 proyectos. Diseño moderno, funcional y orientado a conversiones."
         steps={paginaWebSteps}
       ></NuestroProcesoLocal>
+
+      <Faq1
+        faqData={paginaWebFaq}
+        title="Preguntas Frecuentes sobre Páginas Web"
+      />
 
       <ContactIno3></ContactIno3>
     </div>

@@ -4,6 +4,7 @@ import HeroBannerPlanes from "@/app/Components/HeroBanner/HeroBannerPlanes";
 import FeaturesSection from "@/app/Components/FeaturesSection/FeaturesSection";
 import NuestroProcesoLocal from "@/app/Components/NuestroProcesoLocal/NuestroProcesoLocal";
 import ContactIno3 from "@/app/Components/ContactInfo/ContactIno3";
+import Faq1 from "@/app/Components/Faq/Faq1";
 import {
   Search,
   Settings,
@@ -96,6 +97,29 @@ const imagenMarcaWhyImportant = [
   "Se necesitan 5-7 exposiciones visuales para recordar una marca — logo y colores consistentes crean reconocimiento automático",
 ];
 
+const imagenMarcaFaq = [
+  {
+    title: "¿Cuánto cuesta crear una identidad visual completa?",
+    desc: "Una identidad visual básica (logo + paleta de colores) cuesta €600-1,200. Identidad completa incluye: logo, colores, tipografía, guía de marca y aplicaciones iniciales: €1,500-2,500. Esto es inversión única que durará años. Comparado con publicidad continua, es muy rentable.",
+  },
+  {
+    title: "¿Cuántas opciones de logo recibo?",
+    desc: "Ofrecemos mínimo 3 conceptos diferentes para elegir. Cada concepto tiene 2-3 variaciones. Incluye revisiones ilimitadas en el concepto elegido hasta que quedes 100% satisfecho. También entregas el logo en múltiples formatos: PNG, SVG, PDF, para que lo uses en cualquier medio.",
+  },
+  {
+    title: "¿Qué incluye exactamente la guía de marca?",
+    desc: "La guía incluye: logo con espacios mínimos, colores en RGB/HEX, tipografías principales y secundarias, patrones, texturas, ejemplos de uso correcto e incorrecto, y recomendaciones de aplicación. Documento PDF completo que sirve de referencia para cualquier trabajo futuro de diseño.",
+  },
+  {
+    title: "¿Pueden diseñar mi marca si ya tengo logo?",
+    desc: "Sí. Si tienes logo pero no identidad visual definida, te ayudamos a crear paleta de colores, tipografía y guía de marca alrededor de tu logo. O si tu logo necesita actualización, lo rediseñamos manteniendo esencia de tu marca.",
+  },
+  {
+    title: "¿Qué significa que la marca sea escalable?",
+    desc: "Significa que tu logo se ve bien desde miniatura (favicon) hasta cartelón grande (valla publicitaria). Un buen logo no pierde características en tamaños pequeños. Probamos en todos los tamaños: web, redes, print, para garantizar que funcione en todos lados.",
+  },
+];
+
 const ImagenMarcaPage = () => {
   return (
     <div>
@@ -134,6 +158,11 @@ const ImagenMarcaPage = () => {
         description="Proceso probado en más de 80 proyectos. Identidad visual que comunica y diferencia tu marca."
         steps={imagenMarcaSteps}
       ></NuestroProcesoLocal>
+
+      <Faq1
+        faqData={imagenMarcaFaq}
+        title="Preguntas Frecuentes sobre Imagen de Marca"
+      />
 
       <ContactIno3></ContactIno3>
     </div>

@@ -4,6 +4,7 @@ import HeroBannerPlanes from "@/app/Components/HeroBanner/HeroBannerPlanes";
 import FeaturesSection from "@/app/Components/FeaturesSection/FeaturesSection";
 import NuestroProcesoLocal from "@/app/Components/NuestroProcesoLocal/NuestroProcesoLocal";
 import ContactIno3 from "@/app/Components/ContactInfo/ContactIno3";
+import Faq1 from "@/app/Components/Faq/Faq1";
 import {
   Search,
   Settings,
@@ -96,6 +97,29 @@ const notificacionesWhatsappWhyImportant = [
   "Las empresas ganan 25-35% más con WhatsApp Business — automatización de notificaciones aumenta lealtad y ventas",
 ];
 
+const notificacionesWhatsappFaq = [
+  {
+    title: "¿Es legal usar WhatsApp para marketing?",
+    desc: "Sí, con condiciones. Necesitas consentimiento previo del cliente. No puedes enviar spam. WhatsApp Business está diseñado para esto: notificaciones, confirmaciones, recordatorios. El spamming viola términos y bloquean tu cuenta. Usamos best practices: mensajes relevantes, opción unsubscribe.",
+  },
+  {
+    title: "¿Cómo consigo los números de mis clientes?",
+    desc: "Los clientes dan números al comprar, registrarse o solicitar. También puedes pedir explícitamente: 'Deseas recibir notificaciones por WhatsApp? Sí/No'. Importante: consentimiento = legal. Números obtenidos sin consentimiento = bloqueo de cuenta.",
+  },
+  {
+    title: "¿Cuánto cuesta implementar WhatsApp Business?",
+    desc: "La aplicación de WhatsApp es gratis. El costo está en API: €0.06-0.12 por mensaje saliente. Si envías 10,000/mes = €600-1,200/mes. Chatbot con IA: €500-1,000/mes. Total típico: €500-2,000/mes según volumen. ROI positivo inmediato: aumenta ventas 25-35%.",
+  },
+  {
+    title: "¿Pueden responder los clientes automáticamente?",
+    desc: "Sí. Configuramos flujos: cliente escribe → chatbot entiende → responde automático o escala a humano. IA clasificar preguntas simples (estado pedido) vs complejas (reclamos). Así evitas perder chats y cliente siempre tiene respuesta.",
+  },
+  {
+    title: "¿Qué métricas puedo medir?",
+    desc: "Mensajes enviados, tasa de entrega, tasa de lectura, tasa de respuesta, tiempo promedio de respuesta, conversiones generadas. Reportes en tiempo real en dashboard. Así ves qué funciona: horario, tipo mensaje, contenido. Optimizas basado en datos.",
+  },
+];
+
 const NotificacionesWhatsappPage = () => {
   return (
     <div>
@@ -134,6 +158,11 @@ const NotificacionesWhatsappPage = () => {
         description="Proceso probado en más de 80 proyectos. Sistema de notificaciones que conecta con tus clientes."
         steps={notificacionesWhatsappSteps}
       ></NuestroProcesoLocal>
+
+      <Faq1
+        faqData={notificacionesWhatsappFaq}
+        title="Preguntas Frecuentes sobre Notificaciones WhatsApp"
+      />
 
       <ContactIno3></ContactIno3>
     </div>

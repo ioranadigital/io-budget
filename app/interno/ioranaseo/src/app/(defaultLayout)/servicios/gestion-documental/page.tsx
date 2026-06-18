@@ -4,6 +4,7 @@ import HeroBannerPlanes from "@/app/Components/HeroBanner/HeroBannerPlanes";
 import FeaturesSection from "@/app/Components/FeaturesSection/FeaturesSection";
 import NuestroProcesoLocal from "@/app/Components/NuestroProcesoLocal/NuestroProcesoLocal";
 import ContactIno3 from "@/app/Components/ContactInfo/ContactIno3";
+import Faq1 from "@/app/Components/Faq/Faq1";
 import {
   Search,
   Settings,
@@ -96,6 +97,29 @@ const gestionDocumentalWhyImportant = [
   "Acceso controlado reduce riesgos legales 90% — seguridad de datos y auditoría completa protegen tu negocio",
 ];
 
+const gestionDocumentalFaq = [
+  {
+    title: "¿Qué documentos debo gestionar digitalmente?",
+    desc: "Todos: contratos, invoices, facturas, recursos humanos, informes, propuestas, manuales, registros ISO. Cualquier documento que tu equipo necesite compartir o encontrar. Digitalización reduce riesgos de pérdida, cumple legales y acelera procesos.",
+  },
+  {
+    title: "¿Puedo digitalizar documentos en papel?",
+    desc: "Sí. Ofrecemos servicio de escaneo profesional o guiamos tu proceso. Documentos escaneados se indexan automáticamente por OCR para búsqueda por texto. Mantienes originales papeles si los necesitas, pero digitales son tu fuente oficial.",
+  },
+  {
+    title: "¿Es complejo cambiar de gestión documental antigua?",
+    desc: "No. Migramos tus documentos actuales (carpetas compartidas, servidor, OneDrive) al nuevo sistema. Preservamos estructura, agregamos búsqueda inteligente. Equipo ve mejora inmediata: documentos encontrados en segundos, no en minutos.",
+  },
+  {
+    title: "¿Cuánto espacio en nube necesito?",
+    desc: "Típicamente 100-500 GB según volumen. Los precios de cloud son económicos: €10-50/mes. Si tu empresa tiene miles de documentos, ofrecemos soluciones de compresión y archivo automático para documentos antiguos. Escalas según necesidad.",
+  },
+  {
+    title: "¿Qué pasa si alguien borra un documento?",
+    desc: "Está protegido: 1) Control de acceso previene borrados no autorizados, 2) Papelera de reciclaje recupera eliminaciones accidentales, 3) Historial de versiones mantiene todo cambio. Además, backup automático diario. Documentos imposibles de perder.",
+  },
+];
+
 const GestionDocumentalPage = () => {
   return (
     <div>
@@ -134,6 +158,11 @@ const GestionDocumentalPage = () => {
         description="Proceso probado en más de 80 proyectos. Sistema documentario que organiza y protege tu información."
         steps={gestionDocumentalSteps}
       ></NuestroProcesoLocal>
+
+      <Faq1
+        faqData={gestionDocumentalFaq}
+        title="Preguntas Frecuentes sobre Gestión Documental"
+      />
 
       <ContactIno3></ContactIno3>
     </div>

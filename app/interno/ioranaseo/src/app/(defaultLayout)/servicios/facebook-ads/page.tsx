@@ -4,6 +4,7 @@ import HeroBannerPlanes from "@/app/Components/HeroBanner/HeroBannerPlanes";
 import FeaturesSection from "@/app/Components/FeaturesSection/FeaturesSection";
 import NuestroProcesoLocal from "@/app/Components/NuestroProcesoLocal/NuestroProcesoLocal";
 import ContactIno3 from "@/app/Components/ContactInfo/ContactIno3";
+import Faq1 from "@/app/Components/Faq/Faq1";
 import {
   Search,
   Settings,
@@ -96,6 +97,29 @@ const facebookAdsWhyImportant = [
   "El costo por lead en Facebook es 50-75% más bajo que Google Ads — mayor escala con presupuesto más eficiente",
 ];
 
+const facebookAdsFaq = [
+  {
+    title: "¿Cuál es la diferencia entre Facebook Ads y Google Ads?",
+    desc: "Google Ads es para intención de búsqueda ('comprar zapatos'). Facebook Ads es para descubrimiento e interés ('personas que aman la moda'). Google Ads es reactivo, Facebook es proactivo. Idealmente usas ambos: Google para capturar demanda existente, Facebook para crear demanda nueva.",
+  },
+  {
+    title: "¿Cómo segmentan mi audiencia exacta?",
+    desc: "Usamos datos de Meta: edad, sexo, ubicación, intereses, comportamientos, poder adquisitivo, dispositios. Excluimos audiencias que no convierten. Creamos audiencias personalizadas similares a tus clientes. Usamos retargeting para reconectar con personas interesadas. Cada campaña se afina semana a semana.",
+  },
+  {
+    title: "¿Puedo medir exactamente qué anuncio genera venta?",
+    desc: "Sí, configuramos conversion tracking pixel en tu sitio. Ves exactamente qué anuncio, qué audiencia y qué creatividad generó cada compra y su valor. Reportes diarios con costo por conversión, ROAS, y ROI. Todo medible.",
+  },
+  {
+    title: "¿Vale la pena Facebook Ads para negocios B2B?",
+    desc: "Sí, especialmente para leadgen. Aunque B2B es más lento (ciclo de venta mayor), Facebook segmenta empresarios, directores, decisores. Funciona bien con whitepapers, webinarios, demos. El ROAS puede ser menor que B2C pero los leads suelen ser de más valor.",
+  },
+  {
+    title: "¿Qué presupuesto mínimo recomiendan para Facebook?",
+    desc: "Recomendamos €200-300/mes para ver volumen. Con presupuestos menores, no hay suficiente data para algoritmo de Meta. Pero la flexibilidad es tuya: puedes pausar, cambiar o eliminar en cualquier momento. Lo ideal es budget que te permita testing y escalado en 30-60 días.",
+  },
+];
+
 const FacebookAdsPage = () => {
   return (
     <div>
@@ -134,6 +158,11 @@ const FacebookAdsPage = () => {
         description="Proceso probado en más de 80 proyectos. Estrategia de segmentación y optimización para máximo retorno."
         steps={facebookAdsSteps}
       ></NuestroProcesoLocal>
+
+      <Faq1
+        faqData={facebookAdsFaq}
+        title="Preguntas Frecuentes sobre Facebook Ads"
+      />
 
       <ContactIno3></ContactIno3>
     </div>

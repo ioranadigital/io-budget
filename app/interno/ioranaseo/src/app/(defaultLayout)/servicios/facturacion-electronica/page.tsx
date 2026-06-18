@@ -4,6 +4,7 @@ import HeroBannerPlanes from "@/app/Components/HeroBanner/HeroBannerPlanes";
 import FeaturesSection from "@/app/Components/FeaturesSection/FeaturesSection";
 import NuestroProcesoLocal from "@/app/Components/NuestroProcesoLocal/NuestroProcesoLocal";
 import ContactIno3 from "@/app/Components/ContactInfo/ContactIno3";
+import Faq1 from "@/app/Components/Faq/Faq1";
 import {
   Search,
   Settings,
@@ -96,6 +97,29 @@ const facturacionElectronicaWhyImportant = [
   "Auditorías fiscales toman 90% menos tiempo con facturación digital — trazabilidad completa automática genera confianza con Hacienda",
 ];
 
+const facturacionElectronicaFaq = [
+  {
+    title: "¿Es obligatoria la facturación electrónica en España?",
+    desc: "Sí, desde el 1 de enero de 2024 es obligatoria para todas las transacciones B2B. Las empresas deben emitir y recibir facturas en formato electrónico. Las excepciones son contadas (freelancers, micropymes en casos específicos). La ley es clara: implementar es obligatorio, no opcional.",
+  },
+  {
+    title: "¿Cuáles son los formatos aceptados?",
+    desc: "Los formatos aceptados son: e-factura (formato estándar), UBL-XML, Facturae, XInvoice. El más usado en España es e-factura. El sistema que implementamos soporta todos los formatos requeridos por Hacienda. Tu cliente recibe en el formato que requiere.",
+  },
+  {
+    title: "¿Se integra con mi software actual?",
+    desc: "Sí. Si tienes ERP, CRM o software de contabilidad, lo integramos mediante API. Tus facturas se generan automáticamente sin duplicar trabajo. Si usas Excel o facturas manuales, implementamos una solución cloud que se sincroniza con Hacienda.",
+  },
+  {
+    title: "¿Quién guarda mis facturas en Hacienda?",
+    desc: "Las facturas se registran automáticamente en el Registro de Facturas Telemático (RFT) del Banco de España. Tú tienes copia digital. Hacienda tiene acceso en tiempo real. Es el archivo oficial, legal y auditado. Cero riesgo de pérdida.",
+  },
+  {
+    title: "¿Cuánto cuesta implementar facturación electrónica?",
+    desc: "Varía según complejidad. Facturación simple (hasta 500 facturas/mes): €300-500/mes. Facturación compleja con ERP integrado: €800-1,500/mes. Incluye: software, soporte, actualizaciones, cumplimiento normativo. Se amortiza en 2-3 meses por ahorro administrativo.",
+  },
+];
+
 const FacturacionElectronicaPage = () => {
   return (
     <div>
@@ -134,6 +158,11 @@ const FacturacionElectronicaPage = () => {
         description="Proceso probado en más de 80 proyectos. Sistema legal y eficiente para tu negocio."
         steps={facturacionElectronicaSteps}
       ></NuestroProcesoLocal>
+
+      <Faq1
+        faqData={facturacionElectronicaFaq}
+        title="Preguntas Frecuentes sobre Facturación Electrónica"
+      />
 
       <ContactIno3></ContactIno3>
     </div>

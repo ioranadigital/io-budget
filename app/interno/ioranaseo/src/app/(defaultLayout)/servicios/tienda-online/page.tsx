@@ -4,6 +4,7 @@ import HeroBannerPlanes from "@/app/Components/HeroBanner/HeroBannerPlanes";
 import FeaturesSection from "@/app/Components/FeaturesSection/FeaturesSection";
 import NuestroProcesoLocal from "@/app/Components/NuestroProcesoLocal/NuestroProcesoLocal";
 import ContactIno3 from "@/app/Components/ContactInfo/ContactIno3";
+import Faq1 from "@/app/Components/Faq/Faq1";
 import {
   Search,
   Settings,
@@ -96,6 +97,29 @@ const tiendaOnlineWhyImportant = [
   "Las transacciones e-commerce crecen 15-20% anual globalmente — no vender online es dejar dinero sobre la mesa a la competencia",
 ];
 
+const tiendaOnlineFaq = [
+  {
+    title: "¿Qué plataformas de pago integran?",
+    desc: "Integramos las principales: Stripe, PayPal, redsys, Bizum, transferencia bancaria, y billeteras digitales. Los clientes eligen su método favorito. Todas están certificadas PCI-DSS para máxima seguridad. Recibes el dinero en tu cuenta en 24-48 horas.",
+  },
+  {
+    title: "¿Pueden migrar mi catálogo de productos actual?",
+    desc: "Sí, migramos tu inventario completo desde Excel, Shopify, WooCommerce o cualquier plataforma. Incluye imágenes, descripciones, precios e inventario. Si no tienes los datos organizados, te ayudamos a estructurarlos. Cero productos perdidos en la migración.",
+  },
+  {
+    title: "¿Está incluido el mantenimiento y actualización?",
+    desc: "Sí. En el plan base incluimos actualizaciones de seguridad, backups automáticos y soporte técnico. Las actualizaciones de productos las haces tú mismo desde el panel. Si necesitas cambios en el diseño o funcionalidad, ofrecemos planes de mantenimiento mensual desde €50.",
+  },
+  {
+    title: "¿Cómo manejo el inventario?",
+    desc: "Panel de inventario automático: bajas stock cuando vendes, subes cuando compras. Configuramos alertas cuando quedan pocas unidades. Se sincroniza en tiempo real con la tienda. También puedes importar cambios masivos de inventario vía Excel.",
+  },
+  {
+    title: "¿Cuánto tiempo tarda la tienda en estar vendiendo?",
+    desc: "Típicamente 4-6 semanas: migración de catálogo, integración de pagos, diseño y pruebas. Las tiendas simples (50-100 productos) están listas en 3 semanas. Hacemos pruebas exhaustivas de pagos, carrito y envíos antes del lanzamiento para que todo funcione perfecto.",
+  },
+];
+
 const TiendaOnlinePage = () => {
   return (
     <div>
@@ -134,6 +158,11 @@ const TiendaOnlinePage = () => {
         description="Proceso probado en más de 80 e-commerce. Venta segura, pagos integrados y máximas conversiones."
         steps={tiendaOnlineSteps}
       ></NuestroProcesoLocal>
+
+      <Faq1
+        faqData={tiendaOnlineFaq}
+        title="Preguntas Frecuentes sobre Tienda Online"
+      />
 
       <ContactIno3></ContactIno3>
     </div>

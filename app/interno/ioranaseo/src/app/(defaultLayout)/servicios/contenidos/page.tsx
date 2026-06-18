@@ -4,6 +4,7 @@ import HeroBannerPlanes from "@/app/Components/HeroBanner/HeroBannerPlanes";
 import FeaturesSection from "@/app/Components/FeaturesSection/FeaturesSection";
 import NuestroProcesoLocal from "@/app/Components/NuestroProcesoLocal/NuestroProcesoLocal";
 import ContactIno3 from "@/app/Components/ContactInfo/ContactIno3";
+import Faq1 from "@/app/Components/Faq/Faq1";
 import {
   Search,
   Settings,
@@ -96,6 +97,29 @@ const contenidosWhyImportant = [
   "Las empresas que publican contenido regularmente generan 67% más leads — contenido consistente construye autoridad y confianza en tu nicho",
 ];
 
+const contenidosFaq = [
+  {
+    title: "¿Cuánto cuesta crear contenido optimizado?",
+    desc: "Un artículo de blog (1,500-2,000 palabras) optimizado cuesta €150-300 dependiendo del tema. Un pack de 4 artículos mensuales cuesta €500-800. Este incluye: investigación, redacción, SEO optimization, imágenes, publicación. Después, el contenido genera tráfico gratis indefinidamente.",
+  },
+  {
+    title: "¿Cuál es la diferencia entre copywriting y content marketing?",
+    desc: "Copywriting vende directamente ('Compra ahora'). Content marketing educa y atrae ('Guía de 10 pasos'). El content marketing construye autoridad y confianza a largo plazo. Copywriting convierte en el momento. Usamos ambos: content para atrae, copywriting para convierte.",
+  },
+  {
+    title: "¿Cuánto tiempo tarda en posicionarse un artículo?",
+    desc: "Un artículo bien optimizado empieza a rankear en 2-3 semanas para palabras clave menos competidas. Para palabras clave competidas (1,000+ búsquedas/mes), 2-3 meses. Una vez rankeado, el tráfico se mantiene consistente durante años. A mayor número de artículos, mayor tráfico acumulativo.",
+  },
+  {
+    title: "¿Necesitan acceso a mi web para publicar?",
+    desc: "Sí, necesitamos acceso a tu CMS (WordPress, Wix, etc.) para publicar. O podemos entregar los artículos en Word y tú los publicas. Incluye: redacción completa, imágenes stock, SEO markup, CTA integrado, y enlaces internos estratégicos.",
+  },
+  {
+    title: "¿Puedo usar inteligencia artificial para contenido?",
+    desc: "IA ayuda con borrador pero necesita edición humana seria. Contenido AI sin revisar es mediocre y Google lo penaliza. Usamos IA para speed pero editamos, verificamos datos y adaptamos a tu voz de marca. El resultado es contenido de calidad con 50% más eficiencia.",
+  },
+];
+
 const ContenidosPage = () => {
   return (
     <div>
@@ -134,6 +158,11 @@ const ContenidosPage = () => {
         description="Proceso probado en más de 80 proyectos. Contenido optimizado que posiciona en Google y genera resultados."
         steps={contenidosSteps}
       ></NuestroProcesoLocal>
+
+      <Faq1
+        faqData={contenidosFaq}
+        title="Preguntas Frecuentes sobre Generación de Contenidos"
+      />
 
       <ContactIno3></ContactIno3>
     </div>
