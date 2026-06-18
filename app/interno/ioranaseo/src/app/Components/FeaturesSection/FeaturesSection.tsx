@@ -238,12 +238,13 @@ const FeaturesSection: FC<FeaturesSectionProps> = ({
               <Image
                 src={imageSrc}
                 alt={imageAlt}
-                width={400}
-                height={400}
+                width={450}
+                height={450}
                 style={{
                   width: "100%",
                   height: "100%",
-                  objectFit: "cover",
+                  objectFit: "contain",
+                  objectPosition: "center",
                 }}
               />
             </div>
