@@ -21,7 +21,7 @@ const PosicionamientoGooglePage = () => {
       <div style={{ fontSize: "0.85em" }} className="ficha-hero">
         <HeroBannerPlanes
           subtitle="Servicios Digitales"
-          title="Presencia Digital en Google"
+          title="Presencia Digital en <span style='color: #4D32A5;'>Google</span>"
           content="Posiciona tu negocio en Google y atrae clientes que te están buscando. Estrategias SEO probadas que generan resultados reales."
           img="/assets/img/hero/hero3-main-img.png"
           showImage={false}
