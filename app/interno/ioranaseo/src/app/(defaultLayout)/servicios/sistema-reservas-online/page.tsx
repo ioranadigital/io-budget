@@ -28,9 +28,17 @@ const SistemaReservasOnlinePage = () => {
         ></HeroBannerPlanes>
       </div>
 
-      <FeaturesSection></FeaturesSection>
+      <FeaturesSection
+        title="¿Cuales son los beneficios de tener un sistema de"
+        titleHighlight="Reservas Online?"
+        description="Un sistema de reservas online reduce carga administrativa, mejora la experiencia del cliente y aumenta tus ingresos permitiendo que tus clientes reserven 24/7."
+      ></FeaturesSection>
 
-      <NuestroProcesoLocal></NuestroProcesoLocal>
+      <NuestroProcesoLocal
+        title="¿Cual es la metodologia para implementar tu sistema de"
+        titleHighlight="Reservas Online?"
+        description="Proceso probado en más de 80 proyectos. Sistema de reservas que gestiona automáticamente tus citas."
+      ></NuestroProcesoLocal>
 
       <ContactIno3></ContactIno3>
     </div>
