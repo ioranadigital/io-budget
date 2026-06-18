@@ -4,7 +4,37 @@ import HeroBannerPlanes from "@/app/Components/HeroBanner/HeroBannerPlanes";
 import FeaturesSection from "@/app/Components/FeaturesSection/FeaturesSection";
 import NuestroProcesoLocal from "@/app/Components/NuestroProcesoLocal/NuestroProcesoLocal";
 import ContactIno3 from "@/app/Components/ContactInfo/ContactIno3";
-import { Search, Settings, FileText, Star, BarChart3 } from "lucide-react";
+import {
+  Search,
+  Settings,
+  FileText,
+  Star,
+  BarChart3,
+  Users,
+  Heart,
+  Share2,
+} from "lucide-react";
+
+const facebookAdsFeatures = [
+  {
+    icon: <Users size={32} />,
+    title: "Alcanza a Tu Audiencia Perfecta",
+    description:
+      "3 billones de usuarios activos en Meta, y nosotros encontramos exactamente quiénes son los tuyos. Edad, intereses, comportamientos, poder adquisitivo. Cero gasto en público que no te interesa.",
+  },
+  {
+    icon: <Heart size={32} />,
+    title: "Engagement Real y Conversaciones",
+    description:
+      "No es solo impresiones, es gente que comenta, comparte y compra. Facebook genera comunidad alrededor de tu marca. Clientes que no solo compran una vez, se quedan para siempre.",
+  },
+  {
+    icon: <Share2 size={32} />,
+    title: "Viralidad y Alcance Exponencial",
+    description:
+      "Tus anuncios se comparten, multiplican su alcance sin costo adicional. Un video viral en Facebook llega a cientos de miles. Contenido que se propaga solo generando visibilidad infinita.",
+  },
+];
 
 const facebookAdsSteps = [
   {
@@ -81,6 +111,7 @@ const FacebookAdsPage = () => {
         title="¿Cuáles son las ventajas de las Campañas en"
         titleHighlight="Facebook Ads?"
         description="Facebook Ads alcanza a tu audiencia perfecta con segmentación avanzada. Multiplica tu alcance, aumenta conversiones y aprovecha el poder de 3 billones de usuarios activos en Meta."
+        features={facebookAdsFeatures}
       ></FeaturesSection>
 
       <NuestroProcesoLocal

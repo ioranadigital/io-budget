@@ -4,7 +4,37 @@ import HeroBannerPlanes from "@/app/Components/HeroBanner/HeroBannerPlanes";
 import FeaturesSection from "@/app/Components/FeaturesSection/FeaturesSection";
 import NuestroProcesoLocal from "@/app/Components/NuestroProcesoLocal/NuestroProcesoLocal";
 import ContactIno3 from "@/app/Components/ContactInfo/ContactIno3";
-import { Search, Settings, FileText, Star, BarChart3 } from "lucide-react";
+import {
+  Search,
+  Settings,
+  FileText,
+  Star,
+  BarChart3,
+  Users,
+  Rocket,
+  Target,
+} from "lucide-react";
+
+const crmFeatures = [
+  {
+    icon: <Users size={32} />,
+    title: "Todo Sobre Cada Cliente en Un Lugar",
+    description:
+      "Historial completo de cada cliente centralizado. Compras, comportamiento, comunicaciones, preferencias. Tu equipo de ventas sabe exactamente qué necesita cada cliente sin perder tiempo buscando información.",
+  },
+  {
+    icon: <Rocket size={32} />,
+    title: "Ventas Más Rápidas y Automatizadas",
+    description:
+      "Pipeline de ventas visible en tiempo real. Flujos automáticos que mueven leads sin intervención manual. Seguimiento automático de oportunidades. Ciclo de ventas 30-40% más rápido garantizado.",
+  },
+  {
+    icon: <Target size={32} />,
+    title: "Decisiones Basadas en Datos Reales",
+    description:
+      "Reportes automáticos de cada ejecutivo, cada etapa, cada producto. Identifica qué funciona y qué no instantáneamente. Estrategia sales basada en datos, no en intuición. Ingresos predecibles y escalables.",
+  },
+];
 
 const crmSteps = [
   {
@@ -81,6 +111,7 @@ const CRMPage = () => {
         title="¿Cuáles son los beneficios de un"
         titleHighlight="CRM Profesional?"
         description="Un CRM transformador centraliza toda la información de clientes, automatiza flujos de ventas, mejora colaboración del equipo y aumenta ingresos hasta 300%. Tu arma competitiva en el comercio moderno."
+        features={crmFeatures}
       ></FeaturesSection>
 
       <NuestroProcesoLocal

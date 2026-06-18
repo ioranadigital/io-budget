@@ -4,7 +4,37 @@ import HeroBannerPlanes from "@/app/Components/HeroBanner/HeroBannerPlanes";
 import FeaturesSection from "@/app/Components/FeaturesSection/FeaturesSection";
 import NuestroProcesoLocal from "@/app/Components/NuestroProcesoLocal/NuestroProcesoLocal";
 import ContactIno3 from "@/app/Components/ContactInfo/ContactIno3";
-import { Search, Settings, FileText, Star, BarChart3 } from "lucide-react";
+import {
+  Search,
+  Settings,
+  FileText,
+  Star,
+  BarChart3,
+  Calendar,
+  TrendingUp,
+  Clock,
+} from "lucide-react";
+
+const sistemaReservasOnlineFeatures = [
+  {
+    icon: <Calendar size={32} />,
+    title: "Reservas 24/7 Sin Intervención Manual",
+    description:
+      "Clientes reservan cuando quieren, sin llamar. App o web que funciona mientras duermes. Calendario sincronizado automáticamente. Cero gestión manual de citas, cero errores de dobles reservas.",
+  },
+  {
+    icon: <TrendingUp size={32} />,
+    title: "Máxima Ocupación Garantizada",
+    description:
+      "Reduce no-shows hasta 90% con recordatorios automáticos. Sistema inteligente que rellena huecos disponibles. Utilización de capacidad aumenta 40-60%. Ingresos suben sin vender más.",
+  },
+  {
+    icon: <Clock size={32} />,
+    title: "Ahorro de Tiempo Administrativo Masivo",
+    description:
+      "Termina con gestión manual de citas. Confirmaciones automáticas, recordatorios, pagos integrados. Tu equipo se enfoca en servicio, no en agenda. Ahorro de 10+ horas semanales garantizado.",
+  },
+];
 
 const sistemaReservasOnlineSteps = [
   {
@@ -81,6 +111,7 @@ const SistemaReservasOnlinePage = () => {
         title="¿Cuáles son las ventajas de un"
         titleHighlight="Sistema de Reservas Online?"
         description="Un sistema de reservas automatizado reduce carga administrativa, mejora experiencia del cliente, aumenta ingresos y permite que tus clientes reserven 24/7 sin intervención manual. Eficiencia y conveniencia total."
+        features={sistemaReservasOnlineFeatures}
       ></FeaturesSection>
 
       <NuestroProcesoLocal

@@ -4,7 +4,37 @@ import HeroBannerPlanes from "@/app/Components/HeroBanner/HeroBannerPlanes";
 import FeaturesSection from "@/app/Components/FeaturesSection/FeaturesSection";
 import NuestroProcesoLocal from "@/app/Components/NuestroProcesoLocal/NuestroProcesoLocal";
 import ContactIno3 from "@/app/Components/ContactInfo/ContactIno3";
-import { Search, Settings, FileText, Star, BarChart3 } from "lucide-react";
+import {
+  Search,
+  Settings,
+  FileText,
+  Star,
+  BarChart3,
+  Layers,
+  Eye,
+  Zap,
+} from "lucide-react";
+
+const gestionDocumentalFeatures = [
+  {
+    icon: <Layers size={32} />,
+    title: "Documentos Organizados y Accesibles",
+    description:
+      "Caos documental resuelto. Sistema de carpetas lógico y búsqueda inteligente. Encuentra cualquier documento en segundos, no en horas. Equipo completo puede acceder desde cualquier lugar, en tiempo real.",
+  },
+  {
+    icon: <Eye size={32} />,
+    title: "Seguridad y Control de Acceso Total",
+    description:
+      "Documentos protegidos con encriptación. Control de quién ve qué, quién edita, quién descarga. Cada acción auditada completamente. Datos confidenciales seguros garantizado. Cumplimiento GDPR automático.",
+  },
+  {
+    icon: <Zap size={32} />,
+    title: "Eficiencia Operacional Comprobada",
+    description:
+      "Reduce tiempo de búsqueda 80%. Flujos de aprobación automáticos. Versionamiento de documentos impide errores. Backup automático evita pérdidas. Productividad aumenta, costos bajan, riesgos desaparecen.",
+  },
+];
 
 const gestionDocumentalSteps = [
   {
@@ -81,6 +111,7 @@ const GestionDocumentalPage = () => {
         title="¿Por qué tu negocio necesita una"
         titleHighlight="Gestión Documental Profesional?"
         description="La gestión documental centralizada protege tu información, mejora colaboración, reduce riesgos legales y cumple automáticamente normativas. Control total de tus documentos en un único lugar seguro."
+        features={gestionDocumentalFeatures}
       ></FeaturesSection>
 
       <NuestroProcesoLocal

@@ -4,7 +4,37 @@ import HeroBannerPlanes from "@/app/Components/HeroBanner/HeroBannerPlanes";
 import FeaturesSection from "@/app/Components/FeaturesSection/FeaturesSection";
 import NuestroProcesoLocal from "@/app/Components/NuestroProcesoLocal/NuestroProcesoLocal";
 import ContactIno3 from "@/app/Components/ContactInfo/ContactIno3";
-import { Search, Settings, FileText, Star, BarChart3 } from "lucide-react";
+import {
+  Search,
+  Settings,
+  FileText,
+  Star,
+  BarChart3,
+  BookOpen,
+  Award,
+  Zap,
+} from "lucide-react";
+
+const contenidosFeatures = [
+  {
+    icon: <BookOpen size={32} />,
+    title: "Posicionamiento Orgánico que No se Compra",
+    description:
+      "Google ama el contenido de calidad. Artículos bien investigados y optimizados se posicionan solos sin pagar por clicks. Tráfico gratis y consistente durante años. Contenido que es un activo permanente.",
+  },
+  {
+    icon: <Award size={32} />,
+    title: "Autoridad y Confianza en Tu Industria",
+    description:
+      "Contenido experto establece tu marca como líder de opinión. Clientes buscan a expertos y te encuentran. Artículos publicados en medios te dan credibilidad que dinero no puede comprar.",
+  },
+  {
+    icon: <Zap size={32} />,
+    title: "Conversión Gradual Altamente Rentable",
+    description:
+      "Contenido educa a clientes antes de comprar, reduciendo objeciones. Lead nurturing automático a través de blogs. Costo por adquisición de cliente más bajo y lealtad más alta.",
+  },
+];
 
 const contenidosSteps = [
   {
@@ -81,6 +111,7 @@ const ContenidosPage = () => {
         title="¿Por qué el Marketing de"
         titleHighlight="Contenidos es Estratégico?"
         description="El contenido es el corazón del marketing digital moderno. Estrategia de contenido bien ejecutada posiciona tu marca, atrae tráfico orgánico de calidad, genera confianza y convierte visitantes en clientes leales."
+        features={contenidosFeatures}
       ></FeaturesSection>
 
       <NuestroProcesoLocal

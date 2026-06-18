@@ -4,7 +4,37 @@ import HeroBannerPlanes from "@/app/Components/HeroBanner/HeroBannerPlanes";
 import FeaturesSection from "@/app/Components/FeaturesSection/FeaturesSection";
 import NuestroProcesoLocal from "@/app/Components/NuestroProcesoLocal/NuestroProcesoLocal";
 import ContactIno3 from "@/app/Components/ContactInfo/ContactIno3";
-import { Search, Settings, FileText, Star, BarChart3 } from "lucide-react";
+import {
+  Search,
+  Settings,
+  FileText,
+  Star,
+  BarChart3,
+  Zap,
+  Eye,
+  TrendingUp,
+} from "lucide-react";
+
+const googleAdsFeatures = [
+  {
+    icon: <Zap size={32} />,
+    title: "Resultados Inmediatos",
+    description:
+      "Olvídate de esperar meses a que Google te posicione. Google Ads genera tráfico el mismo día. Apareces en los primeros resultados de búsqueda y atraes clientes con intención de compra lista para actuar.",
+  },
+  {
+    icon: <Eye size={32} />,
+    title: "Visibilidad en Tu Audiencia Exacta",
+    description:
+      "Segmentamos por palabras clave, ubicación, dispositivo y comportamiento. Cada euro invertido llega a personas que activamente buscan lo que ofreces. Sin desperdicio en audiencias frías.",
+  },
+  {
+    icon: <TrendingUp size={32} />,
+    title: "ROI Medible o Pagas Menos",
+    description:
+      "Solo pagas cuando alguien hace clic en tu anuncio. Tracking completo de cada conversión y su valor en dinero. Reportes diarios que prueban qué está funcionando y qué no.",
+  },
+];
 
 const googleAdsSteps = [
   {
@@ -81,6 +111,7 @@ const GoogleAdsPage = () => {
         title="¿Cuáles son los beneficios de invertir en"
         titleHighlight="Google Ads?"
         description="Google Ads genera resultados inmediatos. Aparece en los primeros resultados de búsqueda, atrae clientes con intención de compra y garantiza un ROI medible. Solo pagas por resultados reales."
+        features={googleAdsFeatures}
       ></FeaturesSection>
 
       <NuestroProcesoLocal

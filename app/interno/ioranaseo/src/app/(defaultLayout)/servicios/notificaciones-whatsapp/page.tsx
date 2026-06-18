@@ -4,7 +4,37 @@ import HeroBannerPlanes from "@/app/Components/HeroBanner/HeroBannerPlanes";
 import FeaturesSection from "@/app/Components/FeaturesSection/FeaturesSection";
 import NuestroProcesoLocal from "@/app/Components/NuestroProcesoLocal/NuestroProcesoLocal";
 import ContactIno3 from "@/app/Components/ContactInfo/ContactIno3";
-import { Search, Settings, FileText, Star, BarChart3 } from "lucide-react";
+import {
+  Search,
+  Settings,
+  FileText,
+  Star,
+  BarChart3,
+  MessageCircle,
+  Zap,
+  Brain,
+} from "lucide-react";
+
+const notificacionesWhatsappFeatures = [
+  {
+    icon: <MessageCircle size={32} />,
+    title: "Comunicación Directa con 98% de Apertura",
+    description:
+      "WhatsApp llega donde email no lo hace. 98% de mensajes abiertos en minutos. Tus clientes leen y responden instantáneamente. Canal de comunicación que funciona como nada antes ha funcionado.",
+  },
+  {
+    icon: <Zap size={32} />,
+    title: "Automatización que Vende Sin Parar",
+    description:
+      "Confirmaciones automáticas, recordatorios de reserva, actualizaciones de pedidos. Chatbot responde preguntas frecuentes 24/7. Clientes satisfechos sin tocar un dedo. Sistema que trabaja mientras duermes.",
+  },
+  {
+    icon: <Brain size={32} />,
+    title: "IA Inteligente que Califica Leads",
+    description:
+      "Chatbot con IA que entiende intención del cliente. Califica leads automáticamente antes que tu equipo. Escala preguntas complejas a humano. Eficiencia máxima, conversión garantizada, sin pérdida de oportunidades.",
+  },
+];
 
 const notificacionesWhatsappSteps = [
   {
@@ -81,6 +111,7 @@ const NotificacionesWhatsappPage = () => {
         title="¿Cuáles son las ventajas de"
         titleHighlight="Notificaciones WhatsApp?"
         description="WhatsApp es el canal más directo con tus clientes con 98% de tasa de apertura. Notificaciones automáticas mejoran experiencia, aumentan conversiones y crean una relación cercana con tu audiencia."
+        features={notificacionesWhatsappFeatures}
       ></FeaturesSection>
 
       <NuestroProcesoLocal

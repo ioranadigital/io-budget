@@ -4,7 +4,37 @@ import HeroBannerPlanes from "@/app/Components/HeroBanner/HeroBannerPlanes";
 import FeaturesSection from "@/app/Components/FeaturesSection/FeaturesSection";
 import NuestroProcesoLocal from "@/app/Components/NuestroProcesoLocal/NuestroProcesoLocal";
 import ContactIno3 from "@/app/Components/ContactInfo/ContactIno3";
-import { Search, Settings, FileText, Star, BarChart3 } from "lucide-react";
+import {
+  Search,
+  Settings,
+  FileText,
+  Star,
+  BarChart3,
+  Cpu,
+  Clock,
+  Lightbulb,
+} from "lucide-react";
+
+const iaAutomatizacionesFeatures = [
+  {
+    icon: <Cpu size={32} />,
+    title: "IA que Piensa como Tu Experto",
+    description:
+      "Máquinas que aprenden y mejoran solas. Algoritmos que toman decisiones complejas en milisegundos. Sin errores humanos, sin cansancio, sin necesidad de supervisión constante. Tu equipo experto 24/7.",
+  },
+  {
+    icon: <Clock size={32} />,
+    title: "Ahorro de Tiempo que Vale Dinero",
+    description:
+      "Tareas que tomaban horas a tu equipo ahora se resuelven en minutos. Procesos que requerían 5 personas ahora se ejecutan solos. Reducción de 40-80% en tiempo operacional con mayor precisión.",
+  },
+  {
+    icon: <Lightbulb size={32} />,
+    title: "Decisiones Más Inteligentes con Datos",
+    description:
+      "IA analiza millones de datos e identifica patrones que humanos pierden. Recomendaciones automáticas basadas en realidad. Estrategia basada en datos, no en intuición, resultado = más ingresos.",
+  },
+];
 
 const iaAutomatizacionesSteps = [
   {
@@ -81,6 +111,7 @@ const IAAutomatizacionesPage = () => {
         title="¿Cuáles son las ventajas de implementar"
         titleHighlight="IA y Automatizaciones?"
         description="La IA multiplica tu productividad sin aumentar costos. Automatiza tareas repetitivas, reduce errores humanos, mejora la experiencia del cliente y libera a tu equipo para trabajo estratégico de alto valor."
+        features={iaAutomatizacionesFeatures}
       ></FeaturesSection>
 
       <NuestroProcesoLocal

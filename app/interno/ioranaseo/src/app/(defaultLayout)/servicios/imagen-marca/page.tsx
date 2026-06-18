@@ -4,7 +4,37 @@ import HeroBannerPlanes from "@/app/Components/HeroBanner/HeroBannerPlanes";
 import FeaturesSection from "@/app/Components/FeaturesSection/FeaturesSection";
 import NuestroProcesoLocal from "@/app/Components/NuestroProcesoLocal/NuestroProcesoLocal";
 import ContactIno3 from "@/app/Components/ContactInfo/ContactIno3";
-import { Search, Settings, FileText, Star, BarChart3 } from "lucide-react";
+import {
+  Search,
+  Settings,
+  FileText,
+  Star,
+  BarChart3,
+  Palette,
+  Zap,
+  Shield,
+} from "lucide-react";
+
+const imagenMarcaFeatures = [
+  {
+    icon: <Palette size={32} />,
+    title: "Identidad Visual que Te Diferencia",
+    description:
+      "Tu logo es tu firma en el mercado. Diseño único que refleja quién eres y qué ofreces. Mientras competidores usan logos genéricos, tú destacas con identidad propia que clientes reconocen de inmediato.",
+  },
+  {
+    icon: <Zap size={32} />,
+    title: "Primera Impresión que Genera Ventas",
+    description:
+      "El 94% de decisiones de compra se basan en primeras impresiones. Marca profesional transmite calidad, confianza y seriedad. Cliente ve tu logo y piensa en ti como referente, no como competencia menor.",
+  },
+  {
+    icon: <Shield size={32} />,
+    title: "Consistencia que Construye Lealtad",
+    description:
+      "Paleta de colores, tipografía y elementos coherentes en todos lados. Clientes te reconocen sin leer tu nombre. Marca consistente genera 80% más reconocimiento y fidelización garantizada.",
+  },
+];
 
 const imagenMarcaSteps = [
   {
@@ -81,6 +111,7 @@ const ImagenMarcaPage = () => {
         title="¿Por qué tu negocio necesita una"
         titleHighlight="Imagen de Marca Única?"
         description="Tu imagen de marca es tu primera impresión y tu ventaja competitiva. Una identidad visual fuerte genera confianza, te diferencia de la competencia y se graba en la mente de tus clientes para siempre."
+        features={imagenMarcaFeatures}
       ></FeaturesSection>
 
       <NuestroProcesoLocal

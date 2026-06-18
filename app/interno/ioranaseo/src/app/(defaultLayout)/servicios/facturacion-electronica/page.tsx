@@ -4,7 +4,37 @@ import HeroBannerPlanes from "@/app/Components/HeroBanner/HeroBannerPlanes";
 import FeaturesSection from "@/app/Components/FeaturesSection/FeaturesSection";
 import NuestroProcesoLocal from "@/app/Components/NuestroProcesoLocal/NuestroProcesoLocal";
 import ContactIno3 from "@/app/Components/ContactInfo/ContactIno3";
-import { Search, Settings, FileText, Star, BarChart3 } from "lucide-react";
+import {
+  Search,
+  Settings,
+  FileText,
+  Star,
+  BarChart3,
+  Lock,
+  DollarSign,
+  AlertCircle,
+} from "lucide-react";
+
+const facturacionElectronicaFeatures = [
+  {
+    icon: <Lock size={32} />,
+    title: "Cumplimiento Fiscal 100% Garantizado",
+    description:
+      "Sistema que cumple TODAS las normativas de Hacienda automáticamente. Cero multas por incumplimiento. Facturas digitales almacenadas según ley, respaldadas y auditables. Tranquilidad fiscal permanente.",
+  },
+  {
+    icon: <DollarSign size={32} />,
+    title: "Ahorro de Costos Operacionales Inmediato",
+    description:
+      "Cero papel, cero impresoras, cero tinta. Reduce 70% de costos de emisión de facturas. Sistema que se integra con tu ERP y genera reportes automáticos. Menos trabajo administrativo, más dinero en bolsillo.",
+  },
+  {
+    icon: <AlertCircle size={32} />,
+    title: "Rastreabilidad Total para Auditorías",
+    description:
+      "Toda factura registrada y trazable, desde emisión hasta cobro. Historial completo disponible en segundos. Auditorías internas y externas resueltas sin estrés. Base de datos que probará tu legalidad.",
+  },
+];
 
 const facturacionElectronicaSteps = [
   {
@@ -81,6 +111,7 @@ const FacturacionElectronicaPage = () => {
         title="¿Cuáles son los beneficios de la"
         titleHighlight="Facturación Electrónica?"
         description="La facturación electrónica es ley en muchos países y una ventaja competitiva. Reduce costos de papelería, acelera pagos, cumple automáticamente normativas fiscales y mejora la experiencia del cliente."
+        features={facturacionElectronicaFeatures}
       ></FeaturesSection>
 
       <NuestroProcesoLocal
