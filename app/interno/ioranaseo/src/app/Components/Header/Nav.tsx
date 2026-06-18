@@ -165,7 +165,7 @@ const Nav: FC<NavProps> = ({ setMobileToggle }) => {
                   </li>
                   <li>
                     <Link
-                      href="/servicios/reservas-online"
+                      href="/servicios/sistema-reservas-online"
                       onClick={() => setMobileToggle(false)}
                     >
                       Reservas Online
