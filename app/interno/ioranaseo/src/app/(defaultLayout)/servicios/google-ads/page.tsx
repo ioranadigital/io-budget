@@ -34,7 +34,11 @@ const GoogleAdsPage = () => {
         description="Si quieres resultados inmediatos, Google Ads es tu mejor aliado. Aparece en los primeros resultados de búsqueda y atrae clientes listos para comprar hoy mismo."
       ></FeaturesSection>
 
-      <NuestroProcesoLocal></NuestroProcesoLocal>
+      <NuestroProcesoLocal
+        title="¿Cómo Gestionaremos tus campañas de"
+        titleHighlight="google ads?"
+        description="Proceso probado en más de 80 proyectos. Estrategia enfocada en ROI y conversiones reales."
+      ></NuestroProcesoLocal>
 
       <ContactIno3></ContactIno3>
     </div>
