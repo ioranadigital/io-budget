@@ -90,6 +90,12 @@ const facebookAdsBenefits = [
   "Conversiones Rentables Escala",
 ];
 
+const facebookAdsWhyImportant = [
+  "Meta tiene 3 billones de usuarios activos mensuales — cobertura masiva con segmentación de precisión para llegar a tu audiencia exacta",
+  "El 77% de compradores descubre productos nuevos en Facebook/Instagram — redes sociales son el primer punto de contacto con nuevos clientes",
+  "El costo por lead en Facebook es 50-75% más bajo que Google Ads — mayor escala con presupuesto más eficiente",
+];
+
 const FacebookAdsPage = () => {
   return (
     <div>
@@ -111,6 +117,7 @@ const FacebookAdsPage = () => {
           img="/assets/img/hero/hero3-main-img.png"
           showImage={false}
           benefits={facebookAdsBenefits}
+          whyImportant={facebookAdsWhyImportant}
         ></HeroBannerPlanes>
       </div>
 

@@ -90,6 +90,12 @@ const imagenMarcaBenefits = [
   "Clientes te Reconocen Siempre",
 ];
 
+const imagenMarcaWhyImportant = [
+  "El 94% de decisiones de compra se basan en primeras impresiones visuales — marca profesional es tu mayor activo de diferenciación",
+  "Empresas con identidad de marca consistente generan 20-30% más ingresos — clientes pagan más por marcas reconocibles y confiables",
+  "Se necesitan 5-7 exposiciones visuales para recordar una marca — logo y colores consistentes crean reconocimiento automático",
+];
+
 const ImagenMarcaPage = () => {
   return (
     <div>
@@ -111,6 +117,7 @@ const ImagenMarcaPage = () => {
           img="/assets/img/hero/hero3-main-img.png"
           showImage={false}
           benefits={imagenMarcaBenefits}
+          whyImportant={imagenMarcaWhyImportant}
         ></HeroBannerPlanes>
       </div>
 

@@ -90,6 +90,12 @@ const googleAdsBenefits = [
   "Clientes con Intención Compra",
 ];
 
+const googleAdsWhyImportant = [
+  "El 63% de compradores hace clic en anuncios de Google cuando busca productos o servicios — es donde tu audiencia busca activamente",
+  "Empresas ganan en promedio 3 euros por cada 1 euro invertido en Google Ads — ROI comprobado en miles de casos de estudio",
+  "El 50% de clientes toma decisión de compra en la primera búsqueda — estar visible en Google Ads significa capturar intención de compra real",
+];
+
 const GoogleAdsPage = () => {
   return (
     <div>
@@ -111,6 +117,7 @@ const GoogleAdsPage = () => {
           img="/assets/img/hero/hero3-main-img.png"
           showImage={false}
           benefits={googleAdsBenefits}
+          whyImportant={googleAdsWhyImportant}
         ></HeroBannerPlanes>
       </div>
 

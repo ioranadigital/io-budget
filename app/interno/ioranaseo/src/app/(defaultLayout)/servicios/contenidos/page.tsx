@@ -90,6 +90,12 @@ const contenidosBenefits = [
   "Clientes Educados Compran Más",
 ];
 
+const contenidosWhyImportant = [
+  "El 80% de decisiones de compra se basan en contenido educativo — clientes buscan información antes de comprar, no solo publicidad",
+  "Un artículo de blog de calidad genera tráfico durante años sin costo adicional — contenido es activo permanente que multiplica ROI en el tiempo",
+  "Las empresas que publican contenido regularmente generan 67% más leads — contenido consistente construye autoridad y confianza en tu nicho",
+];
+
 const ContenidosPage = () => {
   return (
     <div>
@@ -111,6 +117,7 @@ const ContenidosPage = () => {
           img="/assets/img/hero/hero3-main-img.png"
           showImage={false}
           benefits={contenidosBenefits}
+          whyImportant={contenidosWhyImportant}
         ></HeroBannerPlanes>
       </div>
 

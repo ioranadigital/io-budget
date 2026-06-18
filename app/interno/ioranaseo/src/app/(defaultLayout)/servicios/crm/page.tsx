@@ -90,6 +90,12 @@ const crmBenefits = [
   "Decisiones Datos Reales",
 ];
 
+const crmWhyImportant = [
+  "Empresas con CRM aumentan ventas 30-40% — pipeline visible e información centralizada acelera decisiones de cierre",
+  "El 72% de empresas usan CRM para mejorar retención de clientes — información histórica reduce fricción en ventas",
+  "CRM automatiza 25% del tiempo manual de ventas — tu equipo vende en lugar de administrar, ROI en 6-12 meses",
+];
+
 const CRMPage = () => {
   return (
     <div>
@@ -111,6 +117,7 @@ const CRMPage = () => {
           img="/assets/img/hero/hero3-main-img.png"
           showImage={false}
           benefits={crmBenefits}
+          whyImportant={crmWhyImportant}
         ></HeroBannerPlanes>
       </div>
 

@@ -90,6 +90,12 @@ const paginaWebBenefits = [
   "Posicionamiento SEO Incluido",
 ];
 
+const paginaWebWhyImportant = [
+  "El 93% de consumidores investiga online antes de comprar — sin página web, pierdes clientes en la primera fase del cliente",
+  "Las páginas web lentas pierden el 40% de visitantes en 3 segundos — cada segundo de carga lenta cuesta ventas y credibilidad",
+  "El 78% de clientes no vuelve si la experiencia es mala — diseño profesional y usabilidad son inversión en retención",
+];
+
 const PaginaWebPage = () => {
   return (
     <div>
@@ -111,6 +117,7 @@ const PaginaWebPage = () => {
           img="/assets/img/hero/hero3-main-img.png"
           showImage={false}
           benefits={paginaWebBenefits}
+          whyImportant={paginaWebWhyImportant}
         ></HeroBannerPlanes>
       </div>
 

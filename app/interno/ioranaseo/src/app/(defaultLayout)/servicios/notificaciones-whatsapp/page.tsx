@@ -90,6 +90,12 @@ const notificacionesWhatsappBenefits = [
   "Ventas Automáticas Siempre",
 ];
 
+const notificacionesWhatsappWhyImportant = [
+  "WhatsApp tiene 2 billones de usuarios y 98% de apertura de mensajes — 40x más efectivo que email (4% apertura)",
+  "El 68% de clientes prefiere comunicarse con marcas por WhatsApp — es donde tu audiencia QUIERE hablar contigo",
+  "Las empresas ganan 25-35% más con WhatsApp Business — automatización de notificaciones aumenta lealtad y ventas",
+];
+
 const NotificacionesWhatsappPage = () => {
   return (
     <div>
@@ -111,6 +117,7 @@ const NotificacionesWhatsappPage = () => {
           img="/assets/img/hero/hero3-main-img.png"
           showImage={false}
           benefits={notificacionesWhatsappBenefits}
+          whyImportant={notificacionesWhatsappWhyImportant}
         ></HeroBannerPlanes>
       </div>
 

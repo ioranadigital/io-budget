@@ -90,6 +90,12 @@ const sistemaReservasOnlineBenefits = [
   "Ocupación Máxima Garantizada",
 ];
 
+const sistemaReservasOnlineWhyImportant = [
+  "El 47% de usuarios abandona negocio si no puede reservar online — falta de comodidad es perdida directa de clientes",
+  "Recordatorios automáticos reducen no-shows 75-90% — cada no-show es dinero perdido que recordatorios evitan",
+  "Empresas con reservas online ocupan 40-60% más de su capacidad — maximizar utilización sin costo adicional",
+];
+
 const SistemaReservasOnlinePage = () => {
   return (
     <div>
@@ -111,6 +117,7 @@ const SistemaReservasOnlinePage = () => {
           img="/assets/img/hero/hero3-main-img.png"
           showImage={false}
           benefits={sistemaReservasOnlineBenefits}
+          whyImportant={sistemaReservasOnlineWhyImportant}
         ></HeroBannerPlanes>
       </div>
 

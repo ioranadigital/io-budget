@@ -90,6 +90,12 @@ const facturacionElectronicaBenefits = [
   "Auditorías sin Estrés",
 ];
 
+const facturacionElectronicaWhyImportant = [
+  "La facturación electrónica es obligatoria en UE desde 2024 — cumplimiento normativo es ley, no opción",
+  "Empresas con facturación electrónica reducen costos administrativos 50-70% — sin papel, sin almacenamiento, sin errores manuales",
+  "Auditorías fiscales toman 90% menos tiempo con facturación digital — trazabilidad completa automática genera confianza con Hacienda",
+];
+
 const FacturacionElectronicaPage = () => {
   return (
     <div>
@@ -111,6 +117,7 @@ const FacturacionElectronicaPage = () => {
           img="/assets/img/hero/hero3-main-img.png"
           showImage={false}
           benefits={facturacionElectronicaBenefits}
+          whyImportant={facturacionElectronicaWhyImportant}
         ></HeroBannerPlanes>
       </div>
 

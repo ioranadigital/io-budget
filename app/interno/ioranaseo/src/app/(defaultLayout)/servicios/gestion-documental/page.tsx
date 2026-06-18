@@ -90,6 +90,12 @@ const gestionDocumentalBenefits = [
   "Auditoría Completa Siempre",
 ];
 
+const gestionDocumentalWhyImportant = [
+  "El tiempo promedio buscando documentos es 30% de la jornada laboral — gestión documental profesional recupera ese tiempo en productividad",
+  "El 60% de pérdidas de documentos son por mala organización — sistema centralizado evita errores costosos y cumple normativas",
+  "Acceso controlado reduce riesgos legales 90% — seguridad de datos y auditoría completa protegen tu negocio",
+];
+
 const GestionDocumentalPage = () => {
   return (
     <div>
@@ -111,6 +117,7 @@ const GestionDocumentalPage = () => {
           img="/assets/img/hero/hero3-main-img.png"
           showImage={false}
           benefits={gestionDocumentalBenefits}
+          whyImportant={gestionDocumentalWhyImportant}
         ></HeroBannerPlanes>
       </div>
 

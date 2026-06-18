@@ -90,6 +90,12 @@ const tiendaOnlineBenefits = [
   "Más Ingresos sin Límites",
 ];
 
+const tiendaOnlineWhyImportant = [
+  "El 87% de compradores compara precios en múltiples tiendas antes de comprar — estar online significa competencia directa con los mejores precios",
+  "El 70% del carrito abandonado se debe a checkout complicado o no inspirar confianza — simplificar el proceso aumenta conversiones hasta 35%",
+  "Las transacciones e-commerce crecen 15-20% anual globalmente — no vender online es dejar dinero sobre la mesa a la competencia",
+];
+
 const TiendaOnlinePage = () => {
   return (
     <div>
@@ -111,6 +117,7 @@ const TiendaOnlinePage = () => {
           img="/assets/img/hero/hero3-main-img.png"
           showImage={false}
           benefits={tiendaOnlineBenefits}
+          whyImportant={tiendaOnlineWhyImportant}
         ></HeroBannerPlanes>
       </div>
 

@@ -90,6 +90,12 @@ const seoLocalBenefits = [
   "Resultados en Semanas",
 ];
 
+const seoLocalWhyImportant = [
+  "El 46% de todas las búsquedas en Google tienen intención local — tus clientes potenciales te están buscando en tu zona geográfica en este momento",
+  "El 76% de búsquedas locales resultan en una visita física al negocio dentro de 24 horas — SEO Local convierte búsquedas directas en clientes reales",
+  "El Local Pack captura el 44% de los clics totales en resultados de búsqueda — aparecer aquí genera 4 veces más clientes que resultados orgánicos",
+];
+
 const SeoLocalPruebaPage = () => {
   return (
     <div>
@@ -111,6 +117,7 @@ const SeoLocalPruebaPage = () => {
           img="/assets/img/hero/hero3-main-img.png"
           showImage={false}
           benefits={seoLocalBenefits}
+          whyImportant={seoLocalWhyImportant}
         ></HeroBannerPlanes>
       </div>
 

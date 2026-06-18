@@ -11,6 +11,12 @@ const posicionamientoGoogleBenefits = [
   "Ventaja sobre Competencia",
 ];
 
+const posicionamientoGoogleWhyImportant = [
+  "El 39% del tráfico web proviene de búsqueda orgánica en Google — es el canal de adquisición más relevante después de redes sociales pagadas",
+  "El 91.5% de clics en búsquedas van a resultados en la primera página — si no estás en la página 1, prácticamente no existes",
+  "El 28% de búsquedas de productos terminan en compra dentro de 1 mes — posicionarse en SEO es inversión a largo plazo con ROI comprobado",
+];
+
 const PosicionamientoGooglePage = () => {
   return (
     <div>
@@ -32,6 +38,7 @@ const PosicionamientoGooglePage = () => {
           img="/assets/img/hero/hero3-main-img.png"
           showImage={false}
           benefits={posicionamientoGoogleBenefits}
+          whyImportant={posicionamientoGoogleWhyImportant}
         ></HeroBannerPlanes>
       </div>
 

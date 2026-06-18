@@ -90,6 +90,12 @@ const iaAutomatizacionesBenefits = [
   "Decisiones Inteligentes Datos",
 ];
 
+const iaAutomatizacionesWhyImportant = [
+  "Las empresas que usan automatización ahorran 25-40% de costos operacionales — tareas repetitivas que tu equipo hace manualmente",
+  "Un empleado pasa 30% de su tiempo en tareas administrativas que IA resuelve en minutos — liberar tu equipo tiene ROI inmediato",
+  "Procesos automatizados reducen errores humanos en 90% — calidad consistente y clientes más satisfechos sin supervisión",
+];
+
 const IAAutomatizacionesPage = () => {
   return (
     <div>
@@ -111,6 +117,7 @@ const IAAutomatizacionesPage = () => {
           img="/assets/img/hero/hero3-main-img.png"
           showImage={false}
           benefits={iaAutomatizacionesBenefits}
+          whyImportant={iaAutomatizacionesWhyImportant}
         ></HeroBannerPlanes>
       </div>
 
