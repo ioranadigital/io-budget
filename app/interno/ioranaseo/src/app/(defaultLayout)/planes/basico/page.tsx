@@ -7,11 +7,10 @@ import Service3 from "../../../Components/Services/Service3";
 
 const Inicio2Page = () => {
   return (
-    <div style={{ backgroundColor: "#F5F6FF" }}>
+    <div style={{ backgroundColor: "#ffffff" }}>
       <BreadCumb
         bgimg="/assets/img/bg/comon-hero-bg.jpg"
         Title="Planes y Precios"
-        breadcrumbBgColor="#F5F6FF"
       ></BreadCumb>
 
       <HeroBannerPlanes

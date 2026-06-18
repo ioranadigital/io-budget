@@ -6,11 +6,10 @@ import ContactIno3 from "../../Components/ContactInfo/ContactIno3";
 
 const PlanesPage = () => {
   return (
-    <div style={{ backgroundColor: "#F5F6FF" }}>
+    <div style={{ backgroundColor: "#ffffff" }}>
       <BreadCumb
         bgimg="/assets/img/bg/comon-hero-bg.jpg"
         Title="Planes y Precios"
-        breadcrumbBgColor="#F5F6FF"
       ></BreadCumb>
 
       <HeroBannerPlanes
