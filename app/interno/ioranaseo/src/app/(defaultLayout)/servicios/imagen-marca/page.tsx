@@ -4,6 +4,55 @@ import HeroBannerPlanes from "@/app/Components/HeroBanner/HeroBannerPlanes";
 import FeaturesSection from "@/app/Components/FeaturesSection/FeaturesSection";
 import NuestroProcesoLocal from "@/app/Components/NuestroProcesoLocal/NuestroProcesoLocal";
 import ContactIno3 from "@/app/Components/ContactInfo/ContactIno3";
+import { Search, Settings, FileText, Star, BarChart3 } from "lucide-react";
+
+const imagenMarcaSteps = [
+  {
+    num: "01",
+    title: "Descubrimiento de Marca",
+    body: "Analizamos profundamente tu negocio, valores, competencia y audiencia para definir la esencia de tu marca.",
+    detail: "Entrevistas · Análisis competitivo · Posicionamiento",
+    duration: "Semana 1",
+    color: "#ff8c00",
+    icon: <Search size={32} />,
+  },
+  {
+    num: "02",
+    title: "Diseño de Logo y Isologotipo",
+    body: "Creamos un logo único, memorable y versatile que represente tu marca en cualquier formato o tamaño.",
+    detail: "Concepto · Variantes · Usos permitidos",
+    duration: "Semana 2-3",
+    color: "#818cf8",
+    icon: <Settings size={32} />,
+  },
+  {
+    num: "03",
+    title: "Paleta de Colores y Tipografía",
+    body: "Desarrollamos paleta de colores y seleccionamos tipografías que reflejan tu personalidad de marca.",
+    detail: "Colores primarios · Secundarios · Tipografía",
+    duration: "Semana 4",
+    color: "#34d399",
+    icon: <FileText size={32} />,
+  },
+  {
+    num: "04",
+    title: "Guía de Marca Completa",
+    body: "Creamos guía de identidad visual detallada para uso consistente en todos tus materiales y plataformas.",
+    detail: "Guía completa · Uso de logo · Templates",
+    duration: "Semana 5",
+    color: "#fbbf24",
+    icon: <Star size={32} />,
+  },
+  {
+    num: "05",
+    title: "Aplicaciones Iniciales",
+    body: "Diseñamos tus primeras aplicaciones de marca: tarjetas, papelería, redes sociales y materiales de marketing.",
+    detail: "Tarjetas · Social media · Marketing materials",
+    duration: "Semana 6",
+    color: "#f472b6",
+    icon: <BarChart3 size={32} />,
+  },
+];
 
 const ImagenMarcaPage = () => {
   return (
@@ -38,6 +87,7 @@ const ImagenMarcaPage = () => {
         title="¿Cómo Trabajaremos en tu"
         titleHighlight="Imagen de Marca?"
         description="Proceso probado en más de 80 proyectos. Identidad visual que comunica y diferencia tu marca."
+        steps={imagenMarcaSteps}
       ></NuestroProcesoLocal>
 
       <ContactIno3></ContactIno3>

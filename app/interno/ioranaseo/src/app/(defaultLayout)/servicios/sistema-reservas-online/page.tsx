@@ -4,6 +4,55 @@ import HeroBannerPlanes from "@/app/Components/HeroBanner/HeroBannerPlanes";
 import FeaturesSection from "@/app/Components/FeaturesSection/FeaturesSection";
 import NuestroProcesoLocal from "@/app/Components/NuestroProcesoLocal/NuestroProcesoLocal";
 import ContactIno3 from "@/app/Components/ContactInfo/ContactIno3";
+import { Search, Settings, FileText, Star, BarChart3 } from "lucide-react";
+
+const sistemaReservasOnlineSteps = [
+  {
+    num: "01",
+    title: "Análisis de Disponibilidad",
+    body: "Mapeamos tus servicios, duración, disponibilidad horaria y configuramos reglas de reserva automáticas.",
+    detail: "Servicios setup · Horarios · Reglas",
+    duration: "Semana 1",
+    color: "#ff8c00",
+    icon: <Search size={32} />,
+  },
+  {
+    num: "02",
+    title: "Plataforma de Reservas",
+    body: "Implementamos plataforma moderna con calendario interactivo, confirmación automática y recordatorios.",
+    detail: "Plataforma setup · Calendario · Confirmación",
+    duration: "Semana 2",
+    color: "#818cf8",
+    icon: <Settings size={32} />,
+  },
+  {
+    num: "03",
+    title: "Integración de Pagos",
+    body: "Configuramos pago online durante la reserva con múltiples opciones de pago seguras.",
+    detail: "Pagos setup · Gateways · Seguridad",
+    duration: "Semana 3",
+    color: "#34d399",
+    icon: <FileText size={32} />,
+  },
+  {
+    num: "04",
+    title: "Notificaciones Automáticas",
+    body: "Implementamos notificaciones por email y SMS para confirmación, recordatorio y seguimiento post-reserva.",
+    detail: "Email setup · SMS · Recordatorios",
+    duration: "Semana 4",
+    color: "#fbbf24",
+    icon: <Star size={32} />,
+  },
+  {
+    num: "05",
+    title: "Analytics y Mejora",
+    body: "Monitoreamos tasa de reservas, no-shows y optimizamos sistema para maximizar utilización de tu capacidad.",
+    detail: "Analytics · No-show tracking · Optimización",
+    duration: "Mensual",
+    color: "#f472b6",
+    icon: <BarChart3 size={32} />,
+  },
+];
 
 const SistemaReservasOnlinePage = () => {
   return (
@@ -38,6 +87,7 @@ const SistemaReservasOnlinePage = () => {
         title="¿Cual es la metodologia para implementar tu sistema de"
         titleHighlight="Reservas Online?"
         description="Proceso probado en más de 80 proyectos. Sistema de reservas que gestiona automáticamente tus citas."
+        steps={sistemaReservasOnlineSteps}
       ></NuestroProcesoLocal>
 
       <ContactIno3></ContactIno3>

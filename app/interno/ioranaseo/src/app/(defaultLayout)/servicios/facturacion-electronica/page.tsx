@@ -4,6 +4,55 @@ import HeroBannerPlanes from "@/app/Components/HeroBanner/HeroBannerPlanes";
 import FeaturesSection from "@/app/Components/FeaturesSection/FeaturesSection";
 import NuestroProcesoLocal from "@/app/Components/NuestroProcesoLocal/NuestroProcesoLocal";
 import ContactIno3 from "@/app/Components/ContactInfo/ContactIno3";
+import { Search, Settings, FileText, Star, BarChart3 } from "lucide-react";
+
+const facturacionElectronicaSteps = [
+  {
+    num: "01",
+    title: "Diagnóstico Fiscal",
+    body: "Analizamos tu situación actual, requisitos legales y seleccionamos la plataforma de facturación más adecuada.",
+    detail: "Auditoría fiscal · Requisitos legales · Plataforma",
+    duration: "Semana 1",
+    color: "#ff8c00",
+    icon: <Search size={32} />,
+  },
+  {
+    num: "02",
+    title: "Configuración e Integración",
+    body: "Integramos la facturación electrónica con tus sistemas actuales: contabilidad, inventario y proveedores.",
+    detail: "Setup · Integración API · Testing",
+    duration: "Semana 2",
+    color: "#818cf8",
+    icon: <Settings size={32} />,
+  },
+  {
+    num: "03",
+    title: "Capacitación del Equipo",
+    body: "Capacitamos a tu equipo en el uso de la plataforma, emisión de facturas y generación de reportes.",
+    detail: "Capacitación · Manuales · Soporte inicial",
+    duration: "Semana 3",
+    color: "#34d399",
+    icon: <FileText size={32} />,
+  },
+  {
+    num: "04",
+    title: "Lanzamiento y Monitoreo",
+    body: "Lanzamos la facturación electrónica y monitoreamos el proceso para asegurar cumplimiento normativo.",
+    detail: "Lanzamiento · Monitoreo · Validaciones",
+    duration: "Semana 4",
+    color: "#fbbf24",
+    icon: <Star size={32} />,
+  },
+  {
+    num: "05",
+    title: "Soporte Continuo",
+    body: "Proveemos soporte permanente, actualizaciones normativas y optimización del proceso contable.",
+    detail: "Soporte 24/7 · Actualizaciones · Reportes",
+    duration: "Indefinido",
+    color: "#f472b6",
+    icon: <BarChart3 size={32} />,
+  },
+];
 
 const FacturacionElectronicaPage = () => {
   return (
@@ -38,6 +87,7 @@ const FacturacionElectronicaPage = () => {
         title="¿Cómo Implementaremos"
         titleHighlight="Facturación Electrónica?"
         description="Proceso probado en más de 80 proyectos. Sistema legal y eficiente para tu negocio."
+        steps={facturacionElectronicaSteps}
       ></NuestroProcesoLocal>
 
       <ContactIno3></ContactIno3>

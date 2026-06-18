@@ -4,6 +4,55 @@ import HeroBannerPlanes from "@/app/Components/HeroBanner/HeroBannerPlanes";
 import FeaturesSection from "@/app/Components/FeaturesSection/FeaturesSection";
 import NuestroProcesoLocal from "@/app/Components/NuestroProcesoLocal/NuestroProcesoLocal";
 import ContactIno3 from "@/app/Components/ContactInfo/ContactIno3";
+import { Search, Settings, FileText, Star, BarChart3 } from "lucide-react";
+
+const crmSteps = [
+  {
+    num: "01",
+    title: "Análisis de Procesos de Ventas",
+    body: "Mapeamos tu flujo actual de ventas para diseñar un CRM que optimice cada etapa del ciclo comercial.",
+    detail: "Process mapping · Sales flow · CRM selection",
+    duration: "Semana 1",
+    color: "#ff8c00",
+    icon: <Search size={32} />,
+  },
+  {
+    num: "02",
+    title: "Implementación del CRM",
+    body: "Instalamos y configuramos tu CRM según tus necesidades específicas, campos personalizados e integraciones.",
+    detail: "Setup · Customización · Integraciones",
+    duration: "Semana 2-3",
+    color: "#818cf8",
+    icon: <Settings size={32} />,
+  },
+  {
+    num: "03",
+    title: "Migración de Datos",
+    body: "Transferimos tus datos históricos de clientes al CRM de forma segura y con validación de integridad.",
+    detail: "Data migration · Limpieza · Validación",
+    duration: "Semana 4",
+    color: "#34d399",
+    icon: <FileText size={32} />,
+  },
+  {
+    num: "04",
+    title: "Capacitación del Equipo",
+    body: "Entrenamos a tu equipo de ventas en el uso del CRM para maximizar adopción y resultados.",
+    detail: "Capacitación · Manuales · Best practices",
+    duration: "Semana 5",
+    color: "#fbbf24",
+    icon: <Star size={32} />,
+  },
+  {
+    num: "05",
+    title: "Optimización y Reporting",
+    body: "Monitoreamos métricas clave, optimizamos flujos y generamos reportes que aceleren tus ventas.",
+    detail: "KPI tracking · Optimización · Reportes diarios",
+    duration: "Mensual",
+    color: "#f472b6",
+    icon: <BarChart3 size={32} />,
+  },
+];
 
 const CRMPage = () => {
   return (
@@ -35,9 +84,10 @@ const CRMPage = () => {
       ></FeaturesSection>
 
       <NuestroProcesoLocal
-        title="¿Cómo Implementaremos"
+        title="¿Cómo Implementaremos tu"
         titleHighlight="CRM?"
         description="Proceso probado en más de 80 proyectos. Sistema relacional que crece con tu negocio."
+        steps={crmSteps}
       ></NuestroProcesoLocal>
 
       <ContactIno3></ContactIno3>

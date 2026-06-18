@@ -4,6 +4,55 @@ import HeroBannerPlanes from "@/app/Components/HeroBanner/HeroBannerPlanes";
 import FeaturesSection from "@/app/Components/FeaturesSection/FeaturesSection";
 import NuestroProcesoLocal from "@/app/Components/NuestroProcesoLocal/NuestroProcesoLocal";
 import ContactIno3 from "@/app/Components/ContactInfo/ContactIno3";
+import { Search, Settings, FileText, Star, BarChart3 } from "lucide-react";
+
+const tiendaOnlineSteps = [
+  {
+    num: "01",
+    title: "Análisis y Estrategia",
+    body: "Analizamos tu catálogo de productos, competencia y objetivo de ventas para diseñar una tienda online optimizada.",
+    detail: "Catálogo analysis · Segmentación · Roadmap",
+    duration: "Semana 1",
+    color: "#ff8c00",
+    icon: <Search size={32} />,
+  },
+  {
+    num: "02",
+    title: "Configuración E-Commerce",
+    body: "Implementamos plataforma e-commerce segura con pasarelas de pago, inventario y gestión de órdenes automatizada.",
+    detail: "Plataforma setup · Pagos · Integraciones",
+    duration: "Semana 2-3",
+    color: "#818cf8",
+    icon: <Settings size={32} />,
+  },
+  {
+    num: "03",
+    title: "Diseño y Experiencia",
+    body: "Creamos una tienda atractiva con experiencia de compra fluida que convierte navegantes en compradores.",
+    detail: "UX optimizada · Mobile friendly · Checkout rápido",
+    duration: "Semana 4",
+    color: "#34d399",
+    icon: <FileText size={32} />,
+  },
+  {
+    num: "04",
+    title: "Marketing y Promociones",
+    body: "Implementamos estrategias de marketing integradas, descuentos, email marketing y programas de fidelización.",
+    detail: "Email automation · Descuentos · Referrals",
+    duration: "Semana 5",
+    color: "#fbbf24",
+    icon: <Star size={32} />,
+  },
+  {
+    num: "05",
+    title: "Monitorización y Optimización",
+    body: "Monitoreamos ventas, comportamiento de usuarios y optimizamos continuamente para maximizar tus ingresos.",
+    detail: "Analytics · A/B testing · Reporting mensual",
+    duration: "Mensual",
+    color: "#f472b6",
+    icon: <BarChart3 size={32} />,
+  },
+];
 
 const TiendaOnlinePage = () => {
   return (
@@ -34,7 +83,12 @@ const TiendaOnlinePage = () => {
         description="Vender online multiplica tus ingresos sin límites geográficos. Alcanza clientes 24/7, reduce costos operacionales y escala tu negocio exponencialmente. El comercio electrónico es el presente del negocio."
       ></FeaturesSection>
 
-      <NuestroProcesoLocal></NuestroProcesoLocal>
+      <NuestroProcesoLocal
+        title="Así Creamos tu"
+        titleHighlight="Tienda Online"
+        description="Proceso probado en más de 80 e-commerce. Venta segura, pagos integrados y máximas conversiones."
+        steps={tiendaOnlineSteps}
+      ></NuestroProcesoLocal>
 
       <ContactIno3></ContactIno3>
     </div>

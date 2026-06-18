@@ -4,6 +4,55 @@ import HeroBannerPlanes from "@/app/Components/HeroBanner/HeroBannerPlanes";
 import FeaturesSection from "@/app/Components/FeaturesSection/FeaturesSection";
 import NuestroProcesoLocal from "@/app/Components/NuestroProcesoLocal/NuestroProcesoLocal";
 import ContactIno3 from "@/app/Components/ContactInfo/ContactIno3";
+import { Search, Settings, FileText, Star, BarChart3 } from "lucide-react";
+
+const facebookAdsSteps = [
+  {
+    num: "01",
+    title: "Estrategia de Audiencia",
+    body: "Definimos audiencias precisas basadas en intereses, comportamiento y datos demográficos para alcanzar tu cliente ideal.",
+    detail: "Audiencia análisis · Segmentación · Targeting",
+    duration: "Semana 1",
+    color: "#ff8c00",
+    icon: <Search size={32} />,
+  },
+  {
+    num: "02",
+    title: "Creación de Creatividades",
+    body: "Producimos videos, imágenes y copy persuasivos que capturan atención en el feed y generan engagement.",
+    detail: "Diseño · Videos · Copy · A/B testing",
+    duration: "Semana 2",
+    color: "#818cf8",
+    icon: <Settings size={32} />,
+  },
+  {
+    num: "03",
+    title: "Campañas Multi-Plataforma",
+    body: "Lanzamos campañas integradas en Facebook, Instagram y Audience Network para máximo alcance y conversiones.",
+    detail: "Facebook · Instagram · Audience Network",
+    duration: "Semana 3",
+    color: "#34d399",
+    icon: <FileText size={32} />,
+  },
+  {
+    num: "04",
+    title: "Retargeting y Conversiones",
+    body: "Implementamos estrategias de retargeting para convertir usuarios interesados en clientes reales.",
+    detail: "Pixel setup · Retargeting · Conversion tracking",
+    duration: "Semana 4",
+    color: "#fbbf24",
+    icon: <Star size={32} />,
+  },
+  {
+    num: "05",
+    title: "Optimización y Escalado",
+    body: "Monitoreamos diariamente, optimizamos pujas y creatividades, escalamos campañas rentables para máximo ROI.",
+    detail: "Daily optimization · Bid adjustment · Scaling",
+    duration: "Diario",
+    color: "#f472b6",
+    icon: <BarChart3 size={32} />,
+  },
+];
 
 const FacebookAdsPage = () => {
   return (
@@ -38,6 +87,7 @@ const FacebookAdsPage = () => {
         title="¿Cómo Gestionaremos Tus Campañas de"
         titleHighlight="Facebook Ads?"
         description="Proceso probado en más de 80 proyectos. Estrategia de segmentación y optimización para máximo retorno."
+        steps={facebookAdsSteps}
       ></NuestroProcesoLocal>
 
       <ContactIno3></ContactIno3>

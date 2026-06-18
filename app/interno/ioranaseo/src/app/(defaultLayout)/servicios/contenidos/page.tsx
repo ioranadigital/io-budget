@@ -4,6 +4,55 @@ import HeroBannerPlanes from "@/app/Components/HeroBanner/HeroBannerPlanes";
 import FeaturesSection from "@/app/Components/FeaturesSection/FeaturesSection";
 import NuestroProcesoLocal from "@/app/Components/NuestroProcesoLocal/NuestroProcesoLocal";
 import ContactIno3 from "@/app/Components/ContactInfo/ContactIno3";
+import { Search, Settings, FileText, Star, BarChart3 } from "lucide-react";
+
+const contenidosSteps = [
+  {
+    num: "01",
+    title: "Estrategia de Contenidos",
+    body: "Creamos un calendario editorial personalizado basado en tu industria, audiencia y palabras clave con mayor potencial.",
+    detail: "Keyword research · Editorial calendar · Topics",
+    duration: "Semana 1",
+    color: "#ff8c00",
+    icon: <Search size={32} />,
+  },
+  {
+    num: "02",
+    title: "Redacción SEO Optimizada",
+    body: "Escribimos contenido de calidad, optimizado para SEO que posiciona en Google y atrae a tu audiencia ideal.",
+    detail: "Redacción · SEO optimization · Estructura",
+    duration: "Semana 2-3",
+    color: "#818cf8",
+    icon: <Settings size={32} />,
+  },
+  {
+    num: "03",
+    title: "Diseño y Maquetación",
+    body: "Damos formato profesional a cada contenido con imágenes, videos, infografías que aumentan engagement.",
+    detail: "Diseño · Imágenes · Videos · Infografías",
+    duration: "Semana 4",
+    color: "#34d399",
+    icon: <FileText size={32} />,
+  },
+  {
+    num: "04",
+    title: "Publicación y Promoción",
+    body: "Publicamos en tu web, blog y redes sociales con estrategia de distribución para máximo alcance.",
+    detail: "Publicación · Social media · Email marketing",
+    duration: "Semana 5",
+    color: "#fbbf24",
+    icon: <Star size={32} />,
+  },
+  {
+    num: "05",
+    title: "Análisis y Mejora Continua",
+    body: "Monitoreamos rendimiento, actualizamos contenido antiguo y escalamos los artículos que generan resultados.",
+    detail: "Analytics · Content updates · Performance",
+    duration: "Mensual",
+    color: "#f472b6",
+    icon: <BarChart3 size={32} />,
+  },
+];
 
 const ContenidosPage = () => {
   return (
@@ -38,6 +87,7 @@ const ContenidosPage = () => {
         title="Como generamos los"
         titleHighlight="Contenidos para tu web"
         description="Proceso probado en más de 80 proyectos. Contenido optimizado que posiciona en Google y genera resultados."
+        steps={contenidosSteps}
       ></NuestroProcesoLocal>
 
       <ContactIno3></ContactIno3>

@@ -4,6 +4,55 @@ import HeroBannerPlanes from "@/app/Components/HeroBanner/HeroBannerPlanes";
 import FeaturesSection from "@/app/Components/FeaturesSection/FeaturesSection";
 import NuestroProcesoLocal from "@/app/Components/NuestroProcesoLocal/NuestroProcesoLocal";
 import ContactIno3 from "@/app/Components/ContactInfo/ContactIno3";
+import { Search, Settings, FileText, Star, BarChart3 } from "lucide-react";
+
+const paginaWebSteps = [
+  {
+    num: "01",
+    title: "Estrategia Personalizada",
+    body: "Analizamos tu negocio, competencia y objetivos para diseñar una página web que convierta visitantes en clientes.",
+    detail: "Análisis de negocio · UX/UI strategy · Wireframes",
+    duration: "Semana 1",
+    color: "#ff8c00",
+    icon: <Search size={32} />,
+  },
+  {
+    num: "02",
+    title: "Diseño Profesional",
+    body: "Creamos un diseño moderno, responsivo y atractivo que refleja la identidad de tu marca y atrae a tu audiencia.",
+    detail: "Diseño responsive · Brand guidelines · Mockups",
+    duration: "Semana 2-3",
+    color: "#818cf8",
+    icon: <Settings size={32} />,
+  },
+  {
+    num: "03",
+    title: "Optimización SEO",
+    body: "Implementamos técnicas SEO desde el inicio para que tu página web posicione en buscadores y atraiga tráfico orgánico.",
+    detail: "On-page SEO · Performance · Indexación",
+    duration: "Semana 4",
+    color: "#34d399",
+    icon: <FileText size={32} />,
+  },
+  {
+    num: "04",
+    title: "Integración de Conversiones",
+    body: "Configuramos formularios, botones CTA y herramientas de análisis para convertir visitantes en leads y clientes.",
+    detail: "Formularios · Integración CRM · Analytics",
+    duration: "Semana 5",
+    color: "#fbbf24",
+    icon: <Star size={32} />,
+  },
+  {
+    num: "05",
+    title: "Mantenimiento y Soporte",
+    body: "Lanzamos tu web y la mantenemos segura, actualizada y optimizada. Soporte continuo para tu éxito.",
+    detail: "Hosting · Seguridad · Backup · Soporte 24/7",
+    duration: "Mensual",
+    color: "#f472b6",
+    icon: <BarChart3 size={32} />,
+  },
+];
 
 const PaginaWebPage = () => {
   return (
@@ -38,6 +87,7 @@ const PaginaWebPage = () => {
         title="Así Desarrollaremos tu"
         titleHighlight="Página Web"
         description="Proceso probado en más de 80 proyectos. Diseño moderno, funcional y orientado a conversiones."
+        steps={paginaWebSteps}
       ></NuestroProcesoLocal>
 
       <ContactIno3></ContactIno3>

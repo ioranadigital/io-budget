@@ -4,6 +4,55 @@ import HeroBannerPlanes from "@/app/Components/HeroBanner/HeroBannerPlanes";
 import FeaturesSection from "@/app/Components/FeaturesSection/FeaturesSection";
 import NuestroProcesoLocal from "@/app/Components/NuestroProcesoLocal/NuestroProcesoLocal";
 import ContactIno3 from "@/app/Components/ContactInfo/ContactIno3";
+import { Search, Settings, FileText, Star, BarChart3 } from "lucide-react";
+
+const googleAdsSteps = [
+  {
+    num: "01",
+    title: "Auditoría y Diagnóstico",
+    body: "Analizamos tu negocio, mercado y competencia para definir objetivos claros y presupuesto optimizado en Google Ads.",
+    detail: "Auditoría · Palabras clave · Presupuesto inicial",
+    duration: "Semana 1",
+    color: "#ff8c00",
+    icon: <Search size={32} />,
+  },
+  {
+    num: "02",
+    title: "Configuración de Campañas",
+    body: "Creamos campañas segmentadas por objetivo: búsqueda, display, shopping. Cada una diseñada para máximas conversiones.",
+    detail: "Campañas setup · Segmentación · Palabras clave",
+    duration: "Semana 2",
+    color: "#818cf8",
+    icon: <Settings size={32} />,
+  },
+  {
+    num: "03",
+    title: "Landing Pages Optimizadas",
+    body: "Diseñamos landing pages que convierten tráfico de Google Ads en leads y ventas con tasas de conversión superiores.",
+    detail: "Landing pages · Conversion tracking · A/B testing",
+    duration: "Semana 3",
+    color: "#34d399",
+    icon: <FileText size={32} />,
+  },
+  {
+    num: "04",
+    title: "Optimización Continua",
+    body: "Monitoreamos rendimiento, ajustamos palabras clave, pujas y creatividades diariamente para maximizar ROI.",
+    detail: "Bid management · Optimización · Ajustes diarios",
+    duration: "Diario",
+    color: "#fbbf24",
+    icon: <Star size={32} />,
+  },
+  {
+    num: "05",
+    title: "Reporting y Escalado",
+    body: "Reporting detallado con ROI, ROAS, CPA. Escalamos campañas rentables y eliminamos gastos improductivos.",
+    detail: "Reporting diario · ROI tracking · Escalado",
+    duration: "Diario",
+    color: "#f472b6",
+    icon: <BarChart3 size={32} />,
+  },
+];
 
 const GoogleAdsPage = () => {
   return (
@@ -38,6 +87,7 @@ const GoogleAdsPage = () => {
         title="¿Cómo Gestionaremos Tus Campañas de"
         titleHighlight="Google Ads?"
         description="Proceso probado en más de 80 proyectos. Estrategia enfocada en ROI y conversiones reales."
+        steps={googleAdsSteps}
       ></NuestroProcesoLocal>
 
       <ContactIno3></ContactIno3>

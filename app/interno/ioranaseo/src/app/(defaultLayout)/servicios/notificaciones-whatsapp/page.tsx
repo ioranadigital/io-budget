@@ -4,6 +4,55 @@ import HeroBannerPlanes from "@/app/Components/HeroBanner/HeroBannerPlanes";
 import FeaturesSection from "@/app/Components/FeaturesSection/FeaturesSection";
 import NuestroProcesoLocal from "@/app/Components/NuestroProcesoLocal/NuestroProcesoLocal";
 import ContactIno3 from "@/app/Components/ContactInfo/ContactIno3";
+import { Search, Settings, FileText, Star, BarChart3 } from "lucide-react";
+
+const notificacionesWhatsappSteps = [
+  {
+    num: "01",
+    title: "Configuración de Cuenta",
+    body: "Configuramos tu cuenta de WhatsApp Business, número dedicado y acceso a API oficial de Meta.",
+    detail: "Cuenta setup · Número verificado · API access",
+    duration: "Semana 1",
+    color: "#ff8c00",
+    icon: <Search size={32} />,
+  },
+  {
+    num: "02",
+    title: "Integración con Sistemas",
+    body: "Integramos WhatsApp con tu CRM, ecommerce o sistema de tickets para automatizar notificaciones.",
+    detail: "API integration · Webhooks · Testing",
+    duration: "Semana 2",
+    color: "#818cf8",
+    icon: <Settings size={32} />,
+  },
+  {
+    num: "03",
+    title: "Creación de Flujos Automatizados",
+    body: "Diseñamos flujos de notificación automática: confirmación de compra, seguimiento, recordatorios.",
+    detail: "Flujos · Mensajes · Plantillas",
+    duration: "Semana 3",
+    color: "#34d399",
+    icon: <FileText size={32} />,
+  },
+  {
+    num: "04",
+    title: "Chatbot Inteligente",
+    body: "Implementamos chatbot con IA que responde preguntas frecuentes y cualifica leads 24/7.",
+    detail: "Chatbot setup · IA responses · Escalonamiento",
+    duration: "Semana 4",
+    color: "#fbbf24",
+    icon: <Star size={32} />,
+  },
+  {
+    num: "05",
+    title: "Monitoreo y Optimización",
+    body: "Monitoreamos tasas de entrega, respuesta y optimizamos mensajes para máximo engagement.",
+    detail: "Analytics · A/B testing · Optimization",
+    duration: "Diario",
+    color: "#f472b6",
+    icon: <BarChart3 size={32} />,
+  },
+];
 
 const NotificacionesWhatsappPage = () => {
   return (
@@ -38,6 +87,7 @@ const NotificacionesWhatsappPage = () => {
         title="¿Cómo implementaremos el sistema de"
         titleHighlight="Notificaciones de Whatsapp?"
         description="Proceso probado en más de 80 proyectos. Sistema de notificaciones que conecta con tus clientes."
+        steps={notificacionesWhatsappSteps}
       ></NuestroProcesoLocal>
 
       <ContactIno3></ContactIno3>

@@ -4,6 +4,55 @@ import HeroBannerPlanes from "@/app/Components/HeroBanner/HeroBannerPlanes";
 import FeaturesSection from "@/app/Components/FeaturesSection/FeaturesSection";
 import NuestroProcesoLocal from "@/app/Components/NuestroProcesoLocal/NuestroProcesoLocal";
 import ContactIno3 from "@/app/Components/ContactInfo/ContactIno3";
+import { Search, Settings, FileText, Star, BarChart3 } from "lucide-react";
+
+const gestionDocumentalSteps = [
+  {
+    num: "01",
+    title: "Auditoría Documental",
+    body: "Identificamos todos tus documentos, clasificamos por tipo y definimos políticas de gestión y retención.",
+    detail: "Inventario · Clasificación · Políticas",
+    duration: "Semana 1-2",
+    color: "#ff8c00",
+    icon: <Search size={32} />,
+  },
+  {
+    num: "02",
+    title: "Implementación del Sistema",
+    body: "Instalamos plataforma de gestión documental segura con acceso controlado, historial de cambios y versioning.",
+    detail: "Setup · Configuración · Seguridad",
+    duration: "Semana 3",
+    color: "#818cf8",
+    icon: <Settings size={32} />,
+  },
+  {
+    num: "03",
+    title: "Migración de Documentos",
+    body: "Digitalizamos y organizamos tus documentos en el nuevo sistema manteniendo estructura lógica.",
+    detail: "Digitalización · Organización · Etiquetado",
+    duration: "Semana 4-5",
+    color: "#34d399",
+    icon: <FileText size={32} />,
+  },
+  {
+    num: "04",
+    title: "Capacitación de Usuarios",
+    body: "Entrenamos a tu equipo en el uso del sistema, búsqueda, carga de documentos y control de accesos.",
+    detail: "Capacitación · Manuales · Support",
+    duration: "Semana 6",
+    color: "#fbbf24",
+    icon: <Star size={32} />,
+  },
+  {
+    num: "05",
+    title: "Governance y Optimización",
+    body: "Establecemos políticas de gestión, backup automático y auditoría para mantener documentos seguros.",
+    detail: "Políticas · Backup · Auditoría · Compliance",
+    duration: "Indefinido",
+    color: "#f472b6",
+    icon: <BarChart3 size={32} />,
+  },
+];
 
 const GestionDocumentalPage = () => {
   return (
@@ -38,6 +87,7 @@ const GestionDocumentalPage = () => {
         title="¿Cual es nuestra estrategia para crear tu sistema de"
         titleHighlight="Gestión Documental?"
         description="Proceso probado en más de 80 proyectos. Sistema documentario que organiza y protege tu información."
+        steps={gestionDocumentalSteps}
       ></NuestroProcesoLocal>
 
       <ContactIno3></ContactIno3>
