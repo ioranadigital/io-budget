@@ -147,8 +147,10 @@ const ImagenMarcaPage = () => {
       <FeaturesSection
         title="¿Por qué tu negocio necesita una"
         titleHighlight="Imagen de Marca Única?"
-        description="Tu imagen de marca es tu primera impresión y tu ventaja competitiva. Una identidad visual fuerte genera confianza, te diferencia de la competencia y se graba en la mente de tus clientes para siempre."
+        description="Tu imagen de marca es tu primera impresión y tu ventaja competitivo. Una identidad visual fuerte genera confianza, te diferencia de la competencia y se graba en la mente de tus clientes para siempre."
         features={imagenMarcaFeatures}
+        imageSrc="/assets/img/imagen-marca-450.jpg"
+        imageAlt="Mujer con imagen de marca profesional"
       ></FeaturesSection>
 
       <NuestroProcesoLocal
