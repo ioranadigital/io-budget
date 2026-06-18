@@ -21,16 +21,24 @@ const PaginaWebPage = () => {
       <div style={{ fontSize: "0.85em" }} className="ficha-hero">
         <HeroBannerPlanes
           subtitle="Servicios Digitales"
-          title="Diseñamos tu Página Web"
+          title="Diseñamos tu <span style='color: #4D32A5;'>Página Web</span>"
           content="Páginas web modernas, rápidas y optimizadas que convierten visitantes en clientes. Diseño responsivo y SEO friendly."
           img="/assets/img/hero/hero3-main-img.png"
           showImage={false}
         ></HeroBannerPlanes>
       </div>
 
-      <FeaturesSection></FeaturesSection>
+      <FeaturesSection
+        title="¿Es necesario que mi negocio tenga una"
+        titleHighlight="Pagina Web?"
+        description="Una página web profesional es tu tarjeta de presentación digital. Sin ella, pierdes oportunidades de negocio todos los días. Nosotros la creamos para que convierta."
+      ></FeaturesSection>
 
-      <NuestroProcesoLocal></NuestroProcesoLocal>
+      <NuestroProcesoLocal
+        title="Así Desarrollaremos tu"
+        titleHighlight="Página Web"
+        description="Proceso probado en más de 80 proyectos. Diseño moderno, funcional y orientado a conversiones."
+      ></NuestroProcesoLocal>
 
       <ContactIno3></ContactIno3>
     </div>
