@@ -5,6 +5,12 @@ import FeaturesSection from "@/app/Components/FeaturesSection/FeaturesSection";
 import NuestroProcesoLocal from "@/app/Components/NuestroProcesoLocal/NuestroProcesoLocal";
 import ContactIno3 from "@/app/Components/ContactInfo/ContactIno3";
 
+const posicionamientoGoogleBenefits = [
+  "Tráfico Orgánico Gratuito",
+  "Posicionamiento en Primera Página",
+  "Ventaja sobre Competencia",
+];
+
 const PosicionamientoGooglePage = () => {
   return (
     <div>
@@ -25,6 +31,7 @@ const PosicionamientoGooglePage = () => {
           content="Posiciona tu negocio en Google y atrae clientes que te están buscando. Estrategias SEO probadas que generan resultados reales."
           img="/assets/img/hero/hero3-main-img.png"
           showImage={false}
+          benefits={posicionamientoGoogleBenefits}
         ></HeroBannerPlanes>
       </div>
 

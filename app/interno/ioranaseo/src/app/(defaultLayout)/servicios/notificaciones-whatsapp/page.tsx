@@ -84,6 +84,12 @@ const notificacionesWhatsappSteps = [
   },
 ];
 
+const notificacionesWhatsappBenefits = [
+  "98% Apertura Mensajes",
+  "Chatbot IA 24/7",
+  "Ventas Automáticas Siempre",
+];
+
 const NotificacionesWhatsappPage = () => {
   return (
     <div>
@@ -104,6 +110,7 @@ const NotificacionesWhatsappPage = () => {
           content="Comunica con tus clientes directamente por WhatsApp. Automatiza mensajes y aumenta la interacción con tu audiencia."
           img="/assets/img/hero/hero3-main-img.png"
           showImage={false}
+          benefits={notificacionesWhatsappBenefits}
         ></HeroBannerPlanes>
       </div>
 

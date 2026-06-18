@@ -84,6 +84,12 @@ const contenidosSteps = [
   },
 ];
 
+const contenidosBenefits = [
+  "Posicionamiento Orgánico Gratis",
+  "Autoridad en tu Industria",
+  "Clientes Educados Compran Más",
+];
+
 const ContenidosPage = () => {
   return (
     <div>
@@ -104,6 +110,7 @@ const ContenidosPage = () => {
           content="Contenido de calidad que posiciona en Google y atrae a tu audiencia. Blogs, artículos y landing pages optimizados para conversiones."
           img="/assets/img/hero/hero3-main-img.png"
           showImage={false}
+          benefits={contenidosBenefits}
         ></HeroBannerPlanes>
       </div>
 

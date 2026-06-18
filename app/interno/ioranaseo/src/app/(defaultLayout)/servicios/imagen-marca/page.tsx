@@ -84,6 +84,12 @@ const imagenMarcaSteps = [
   },
 ];
 
+const imagenMarcaBenefits = [
+  "Identidad Visual Única",
+  "Diferenciarse de Competencia",
+  "Clientes te Reconocen Siempre",
+];
+
 const ImagenMarcaPage = () => {
   return (
     <div>
@@ -104,6 +110,7 @@ const ImagenMarcaPage = () => {
           content="Crea una identidad visual única y memorable. Diseño de logo, paleta de colores y guía de marca coherente."
           img="/assets/img/hero/hero3-main-img.png"
           showImage={false}
+          benefits={imagenMarcaBenefits}
         ></HeroBannerPlanes>
       </div>
 

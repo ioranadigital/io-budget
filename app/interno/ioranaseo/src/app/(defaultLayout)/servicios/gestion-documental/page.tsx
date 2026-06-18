@@ -84,6 +84,12 @@ const gestionDocumentalSteps = [
   },
 ];
 
+const gestionDocumentalBenefits = [
+  "Documentos Organizados Segundos",
+  "Seguridad Encriptada Total",
+  "Auditoría Completa Siempre",
+];
+
 const GestionDocumentalPage = () => {
   return (
     <div>
@@ -104,6 +110,7 @@ const GestionDocumentalPage = () => {
           content="Gestión eficiente de documentación. Sistema de control de versiones y acceso seguro para tu equipo."
           img="/assets/img/hero/hero3-main-img.png"
           showImage={false}
+          benefits={gestionDocumentalBenefits}
         ></HeroBannerPlanes>
       </div>
 

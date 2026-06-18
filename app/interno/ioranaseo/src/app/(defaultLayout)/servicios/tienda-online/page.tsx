@@ -84,6 +84,12 @@ const tiendaOnlineSteps = [
   },
 ];
 
+const tiendaOnlineBenefits = [
+  "Vender Online 24/7",
+  "Pagos Seguros Automáticos",
+  "Más Ingresos sin Límites",
+];
+
 const TiendaOnlinePage = () => {
   return (
     <div>
@@ -104,6 +110,7 @@ const TiendaOnlinePage = () => {
           content="Plataformas de e-commerce seguras y escalables. Vende productos online y multiplica tus ingresos con nuestra solución integral."
           img="/assets/img/hero/hero3-main-img.png"
           showImage={false}
+          benefits={tiendaOnlineBenefits}
         ></HeroBannerPlanes>
       </div>
 

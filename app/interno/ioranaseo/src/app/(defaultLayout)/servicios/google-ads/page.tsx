@@ -84,6 +84,12 @@ const googleAdsSteps = [
   },
 ];
 
+const googleAdsBenefits = [
+  "Resultados Inmediatos",
+  "ROI Medible Garantizado",
+  "Clientes con Intención Compra",
+];
+
 const GoogleAdsPage = () => {
   return (
     <div>
@@ -104,6 +110,7 @@ const GoogleAdsPage = () => {
           content="Campañas publicitarias optimizadas que generan leads y ventas. ROI garantizado con gestión experta de presupuesto."
           img="/assets/img/hero/hero3-main-img.png"
           showImage={false}
+          benefits={googleAdsBenefits}
         ></HeroBannerPlanes>
       </div>
 

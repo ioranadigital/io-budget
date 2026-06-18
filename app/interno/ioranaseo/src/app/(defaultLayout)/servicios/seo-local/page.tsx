@@ -84,6 +84,12 @@ const seoLocalSteps = [
   },
 ];
 
+const seoLocalBenefits = [
+  "Visibilidad Local Garantizada",
+  "Más Clientes Cercanos",
+  "Resultados en Semanas",
+];
+
 const SeoLocalPruebaPage = () => {
   return (
     <div>
@@ -104,6 +110,7 @@ const SeoLocalPruebaPage = () => {
           content="Domina las búsquedas locales en tu área geográfica. Atrae clientes cercanos que buscan exactamente lo que ofreces. Estrategia probada para negocios con ubicación física."
           img="/assets/img/hero/hero3-main-img.png"
           showImage={false}
+          benefits={seoLocalBenefits}
         ></HeroBannerPlanes>
       </div>
 

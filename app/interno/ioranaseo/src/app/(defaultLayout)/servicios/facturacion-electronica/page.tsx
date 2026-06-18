@@ -84,6 +84,12 @@ const facturacionElectronicaSteps = [
   },
 ];
 
+const facturacionElectronicaBenefits = [
+  "Cumplimiento Fiscal Garantizado",
+  "Cero Errores Contables",
+  "Auditorías sin Estrés",
+];
+
 const FacturacionElectronicaPage = () => {
   return (
     <div>
@@ -104,6 +110,7 @@ const FacturacionElectronicaPage = () => {
           content="Sistema de facturación digital seguro y cumplidor. Genera, envía y archiva facturas electrónicas de forma automática."
           img="/assets/img/hero/hero3-main-img.png"
           showImage={false}
+          benefits={facturacionElectronicaBenefits}
         ></HeroBannerPlanes>
       </div>
 

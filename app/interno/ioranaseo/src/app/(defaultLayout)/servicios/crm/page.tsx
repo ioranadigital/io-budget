@@ -84,6 +84,12 @@ const crmSteps = [
   },
 ];
 
+const crmBenefits = [
+  "Todo Cliente en Un Lugar",
+  "Ventas 30-40% Más Rápidas",
+  "Decisiones Datos Reales",
+];
+
 const CRMPage = () => {
   return (
     <div>
@@ -104,6 +110,7 @@ const CRMPage = () => {
           content="Gestión integral de relaciones con clientes. Organiza, automatiza y mejora tus procesos de ventas y servicio al cliente."
           img="/assets/img/hero/hero3-main-img.png"
           showImage={false}
+          benefits={crmBenefits}
         ></HeroBannerPlanes>
       </div>
 

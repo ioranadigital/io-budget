@@ -84,6 +84,12 @@ const iaAutomatizacionesSteps = [
   },
 ];
 
+const iaAutomatizacionesBenefits = [
+  "Procesos Automáticos 24/7",
+  "Ahorro 40-80% Tiempo",
+  "Decisiones Inteligentes Datos",
+];
+
 const IAAutomatizacionesPage = () => {
   return (
     <div>
@@ -104,6 +110,7 @@ const IAAutomatizacionesPage = () => {
           content="Automatiza tus procesos con inteligencia artificial. Reduce tiempos, aumenta eficiencia y ahorra costos operacionales."
           img="/assets/img/hero/hero3-main-img.png"
           showImage={false}
+          benefits={iaAutomatizacionesBenefits}
         ></HeroBannerPlanes>
       </div>
 

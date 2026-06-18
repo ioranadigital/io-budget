@@ -84,6 +84,12 @@ const sistemaReservasOnlineSteps = [
   },
 ];
 
+const sistemaReservasOnlineBenefits = [
+  "Reservas 24/7 Automáticas",
+  "Reduce No-Shows 90%",
+  "Ocupación Máxima Garantizada",
+];
+
 const SistemaReservasOnlinePage = () => {
   return (
     <div>
@@ -104,6 +110,7 @@ const SistemaReservasOnlinePage = () => {
           content="Sistema de reservas y citas online para tu negocio. Facilita que tus clientes reserven sin necesidad de llamadas."
           img="/assets/img/hero/hero3-main-img.png"
           showImage={false}
+          benefits={sistemaReservasOnlineBenefits}
         ></HeroBannerPlanes>
       </div>
 

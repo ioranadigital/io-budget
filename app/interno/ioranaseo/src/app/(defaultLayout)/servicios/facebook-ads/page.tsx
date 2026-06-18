@@ -84,6 +84,12 @@ const facebookAdsSteps = [
   },
 ];
 
+const facebookAdsBenefits = [
+  "Audiencia Perfecta Segmentada",
+  "Alcance Exponencial Viral",
+  "Conversiones Rentables Escala",
+];
+
 const FacebookAdsPage = () => {
   return (
     <div>
@@ -104,6 +110,7 @@ const FacebookAdsPage = () => {
           content="Segmenta tu audiencia perfecta en Facebook e Instagram. Campañas efectivas que aumentan tu reach y conversiones."
           img="/assets/img/hero/hero3-main-img.png"
           showImage={false}
+          benefits={facebookAdsBenefits}
         ></HeroBannerPlanes>
       </div>
 

@@ -84,6 +84,12 @@ const paginaWebSteps = [
   },
 ];
 
+const paginaWebBenefits = [
+  "Diseño Profesional Único",
+  "Convertir Visitantes en Clientes",
+  "Posicionamiento SEO Incluido",
+];
+
 const PaginaWebPage = () => {
   return (
     <div>
@@ -104,6 +110,7 @@ const PaginaWebPage = () => {
           content="Páginas web modernas, rápidas y optimizadas que convierten visitantes en clientes. Diseño responsivo y SEO friendly."
           img="/assets/img/hero/hero3-main-img.png"
           showImage={false}
+          benefits={paginaWebBenefits}
         ></HeroBannerPlanes>
       </div>
 
