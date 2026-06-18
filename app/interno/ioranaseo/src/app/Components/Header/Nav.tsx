@@ -118,7 +118,7 @@ const Nav: FC<NavProps> = ({ setMobileToggle }) => {
                 <ul>
                   <li>
                     <Link
-                      href="/service"
+                      href="/servicios/ia-automatizaciones"
                       onClick={() => setMobileToggle(false)}
                     >
                       IA y Automatizaciones
@@ -126,7 +126,7 @@ const Nav: FC<NavProps> = ({ setMobileToggle }) => {
                   </li>
                   <li>
                     <Link
-                      href="/service"
+                      href="/servicios/facturacion-electronica"
                       onClick={() => setMobileToggle(false)}
                     >
                       Factura Electrónica
@@ -134,7 +134,7 @@ const Nav: FC<NavProps> = ({ setMobileToggle }) => {
                   </li>
                   <li>
                     <Link
-                      href="/service"
+                      href="/servicios/crm"
                       onClick={() => setMobileToggle(false)}
                     >
                       CRM
