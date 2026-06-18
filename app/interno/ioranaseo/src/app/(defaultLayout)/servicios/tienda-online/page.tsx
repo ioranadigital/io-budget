@@ -149,6 +149,8 @@ const TiendaOnlinePage = () => {
         titleHighlight="Tienda Online?"
         description="Vender online multiplica tus ingresos sin límites geográficos. Alcanza clientes 24/7, reduce costos operacionales y escala tu negocio exponencialmente. El comercio electrónico es el presente del negocio."
         features={tiendaOnlineFeatures}
+        imageSrc="/assets/img/tienda-online-450.jpg"
+        imageAlt="Mujer gestionando tienda online"
       ></FeaturesSection>
 
       <NuestroProcesoLocal
