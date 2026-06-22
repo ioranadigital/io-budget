@@ -1,37 +1,31 @@
-# Dockerfile optimizado para Coolify
-FROM node:20-alpine
+FROM node:20-alpine AS base
+RUN npm install -g pnpm@9
 
+FROM base AS deps
 WORKDIR /app
+COPY package.json ./
+RUN pnpm install --no-frozen-lockfile --ignore-workspace
 
-# Instalar pnpm
-RUN npm install -g pnpm
-
-# Copiar dependencias
-COPY package.json pnpm-lock.yaml* ./
-
-# Instalar dependencias
-RUN pnpm install --no-frozen-lockfile
-
-# Copiar código fuente
+FROM base AS builder
+WORKDIR /app
+COPY --from=deps /app/node_modules ./node_modules
 COPY . .
-
-# Build
+ENV NEXT_TELEMETRY_DISABLED=1
 RUN pnpm run build
 
-# Crear usuario no-root
-RUN addgroup -g 1001 -S nodejs && adduser -S nextjs -u 1001
-USER nextjs
-
-# Exponer puerto
-EXPOSE 3005
-
-# Variables de entorno
+FROM base AS runner
+WORKDIR /app
 ENV NODE_ENV=production
+ENV NEXT_TELEMETRY_DISABLED=1
 ENV PORT=3005
 
-# Health check
-HEALTHCHECK --interval=30s --timeout=3s --start-period=10s --retries=3 \
-  CMD node -e "require('http').get('http://localhost:3005', (r) => {if (r.statusCode !== 200) throw new Error(r.statusCode)})"
+RUN addgroup -g 1001 -S nodejs && adduser -S nextjs -u 1001
 
-# Comando para iniciar
-CMD ["pnpm", "start"]
+COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
+COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
+COPY --from=builder --chown=nextjs:nodejs /app/public ./public
+
+USER nextjs
+EXPOSE 3005
+
+CMD ["node", "server.js"]
