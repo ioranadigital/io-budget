@@ -3,14 +3,17 @@ RUN npm install -g pnpm@9
 
 FROM base AS deps
 WORKDIR /app
+# Override NODE_ENV so pnpm installs devDependencies needed for build
+ENV NODE_ENV=development
 COPY package.json ./
 RUN pnpm install --no-frozen-lockfile --ignore-workspace
 
 FROM base AS builder
 WORKDIR /app
+ENV NODE_ENV=development
+ENV NEXT_TELEMETRY_DISABLED=1
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
-ENV NEXT_TELEMETRY_DISABLED=1
 RUN pnpm run build
 
 FROM base AS runner
