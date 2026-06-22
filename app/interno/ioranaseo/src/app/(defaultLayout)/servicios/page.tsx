@@ -1,5 +1,4 @@
-"use client";
-import { useWebVitalsTracker } from "@/lib/technical-seo";
+export const dynamic = "force-dynamic";
 import React from "react";
 import BreadCumb from "@/app/Components/Common/BreadCumb";
 import HeroBannerPlanes from "@/app/Components/HeroBanner/HeroBannerPlanes";
@@ -8,7 +7,6 @@ import AuditoriaGratis from "@/app/Components/AuditoriaGratis/AuditoriaGratis";
 import ContactIno3 from "@/app/Components/ContactInfo/ContactIno3";
 
 const ServiciosComparaPage = () => {
-  useWebVitalsTracker();
   return (
     <div>
       <BreadCumb

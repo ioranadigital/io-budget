@@ -1,12 +1,10 @@
-"use client";
-import { useWebVitalsTracker } from "@/lib/technical-seo";
+export const dynamic = "force-dynamic";
 import BlogDetails from "@/app/Components/BlogDetails/BlogDetails";
 import BreadCumb from "@/app/Components/Common/BreadCumb";
 import ContactInfo4 from "@/app/Components/ContactInfo/ContactInfo4";
 import React from "react";
 
 const page = () => {
-  useWebVitalsTracker();
   return (
     <div>
       <BreadCumb

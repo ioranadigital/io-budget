@@ -1,5 +1,6 @@
 "use client";
-import Slider from "react-slick";
+import dynamic from "next/dynamic";
+const Slider = dynamic(() => import("react-slick"), { ssr: false });
 import SectionTitle2 from "../Common/SectionTitle2";
 import data from "../../Data/testimonial2.json";
 import { useRef, FC } from "react";

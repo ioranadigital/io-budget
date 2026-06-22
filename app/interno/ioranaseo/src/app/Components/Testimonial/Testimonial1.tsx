@@ -1,5 +1,6 @@
 "use client";
-import Slider from "react-slick";
+import dynamic from "next/dynamic";
+const Slider = dynamic(() => import("react-slick"), { ssr: false });
 import data from "../../Data/testimonial1.json";
 import SectionTitle from "../Common/SectionTitle";
 import { OptimizedImage } from "@/components";

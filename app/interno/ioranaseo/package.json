@@ -13,10 +13,10 @@
     "bootstrap-icons": "^1.11.3",
     "html-react-parser": "^5.1.18",
     "lucide-react": "^1.20.0",
-    "next": "15.0.3",
-    "react": "19.0.0-rc-66855b96-20241106",
+    "next": "15.1.8",
+    "react": "19.0.0",
     "react-bootstrap": "^2.10.6",
-    "react-dom": "19.0.0-rc-66855b96-20241106",
+    "react-dom": "19.0.0",
     "react-slick": "^0.30.2",
     "slick-carousel": "^1.8.1"
   },

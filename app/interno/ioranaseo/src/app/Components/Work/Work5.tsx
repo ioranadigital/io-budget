@@ -1,7 +1,8 @@
 "use client";
 import { useEffect, FC } from "react";
 import loadBackgroudImages from "../Common/loadBackgroudImages";
-import Slider from "react-slick";
+import dynamic from "next/dynamic";
+const Slider = dynamic(() => import("react-slick"), { ssr: false });
 import { OptimizedImage } from "@/components";
 
 const Work5: FC = () => {

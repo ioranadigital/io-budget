@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useRef, FC } from "react";
-import Slider from "react-slick";
+import dynamic from "next/dynamic";
+const Slider = dynamic(() => import("react-slick"), { ssr: false });
 import data from "../../Data/testimonial2.json";
 import loadBackgroudImages from "../Common/loadBackgroudImages";
 import { OptimizedImage } from "@/components";

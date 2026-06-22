@@ -100,7 +100,9 @@ export function useWebVitals(): PerformanceMetrics {
       const lastEntry = entries[entries.length - 1];
       setMetrics((prev) => ({
         ...prev,
-        lcp: lastEntry.renderTime || lastEntry.loadTime,
+        lcp:
+          (lastEntry as unknown as { renderTime?: number; loadTime?: number })
+            .renderTime || lastEntry.startTime,
       }));
     });
 

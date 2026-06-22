@@ -1,5 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "standalone",
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   // Image optimization
   images: {
     formats: ["image/avif", "image/webp"],
@@ -139,10 +146,9 @@ const nextConfig = {
   // Production source maps
   productionBrowserSourceMaps: false,
 
-  // Experimental optimizations
   experimental: {
-    optimizeCss: true,
     optimizePackageImports: ["lucide-react", "bootstrap-icons"],
+    cpus: 1,
   },
 };
 

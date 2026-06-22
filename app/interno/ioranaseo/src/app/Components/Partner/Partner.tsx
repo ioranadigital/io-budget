@@ -1,6 +1,7 @@
 "use client";
 import { OptimizedImage } from "@/components";
-import Slider from "react-slick";
+import dynamic from "next/dynamic";
+const Slider = dynamic(() => import("react-slick"), { ssr: false });
 import { FC } from "react";
 
 const Partner: FC = () => {

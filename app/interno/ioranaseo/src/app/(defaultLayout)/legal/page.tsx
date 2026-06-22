@@ -1,10 +1,8 @@
-"use client";
-import { useWebVitalsTracker } from "@/lib/technical-seo";
+export const dynamic = "force-dynamic";
 import React from "react";
 import BreadCumb from "../../Components/Common/BreadCumb";
 
 const LegalPage = () => {
-  useWebVitalsTracker();
   return (
     <div>
       <BreadCumb

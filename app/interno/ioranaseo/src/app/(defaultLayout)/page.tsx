@@ -1,5 +1,4 @@
-"use client";
-import { useWebVitalsTracker } from "@/lib/technical-seo";
+export const dynamic = "force-dynamic";
 import React from "react";
 import HeroBanner3 from "../Components/HeroBanner/HeroBanner3";
 import About3 from "../Components/About/About3";
@@ -11,7 +10,6 @@ import Blog2 from "../Components/Blog/Blog2";
 import ContactIno3 from "../Components/ContactInfo/ContactIno3";
 
 const page = () => {
-  useWebVitalsTracker();
   return (
     <div style={{ backgroundColor: "#ffffff" }}>
       <HeroBanner3
