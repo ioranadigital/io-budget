@@ -9,13 +9,11 @@ packages:
   - 'tools/io-budget'
   - 'tools/io-semantico'
   - 'tools/io-design'
-  - 'tools/io-kw'
   - 'tools/io-neruda'
   - 'tools/io-prospector'
 
   # Aplicaciones internas (interno/)
   - 'interno/io-docusia'
-  - 'interno/io-docussia'
   - 'interno/iorana-dev'
   - 'interno/iorana-next'
   - 'interno/ioranaseo'
