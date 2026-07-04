@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3007:3000"
+    restart: unless-stopped
+    networks:
+      - coolify
+      - default
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.io-budget.rule=Host(`budget.iorana.dev`,`www.budget.iorana.dev`)"
+      - "traefik.http.routers.io-budget.entrypoints=websecure"
+      - "traefik.http.routers.io-budget.tls.certresolver=letsencrypt"
+      - "traefik.http.services.io-budget-service.loadbalancer.server.port=3000"
+
+networks:
+  coolify:
+    external: true
+  default:
+    driver: bridge
